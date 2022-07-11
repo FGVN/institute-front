@@ -1,0 +1,170 @@
+<style>
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter';
+  font-style: normal;
+    
+  font-size: 1vw;
+  line-height: 2vw;
+  font-style: normal;
+}
+
+.navbar{
+    width: 100%;
+    height: 15vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    text-align: right;
+    font-weight: 800;
+    color: #1C3964;
+}
+.parent {
+    width: 100%;
+    height: 75vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    font-weight: 800;
+    color:#1C3964;
+}
+
+div{
+    border: 0.1vw solid #1C3964;
+}
+p{
+    margin-top: 1vw;
+}
+
+
+.navtop { 
+    grid-area: 1 / 1 / 2 / 8;
+
+ }
+.navlogo { 
+    grid-area: 2 / 1 / 5 / 2; 
+    background-image: url('data/pics/logo.png');
+    background-repeat: no-repeat;
+    background-size: 10vw;
+    background-position: left;
+ }
+ 
+.navschedule { grid-area: 2 / 6 / 3 / 8; }
+.search{ grid-area: 2 / 4 / 3 / 6; }
+.navphone { grid-area: 2 / 2 / 3 / 4; }
+
+.navmenu { grid-area: 3 / 2 / 5 / 8; }
+
+
+.cathedra { 
+    grid-area: 1 / 1 / 3 / 3;
+    text-align: left; 
+}
+.ipze { grid-area: 3 / 1 / 7 / 3; }
+
+.tzte { grid-area: 1 / 3 / 7 / 4; }
+
+
+.ae { grid-area: 1 / 4 / 4 / 6; }
+.tae { grid-area: 4 / 4 / 7 / 6; }
+
+.aep { grid-area: 7 / 6 / 14 / 7; }
+
+.news { grid-area: 7 / 1 / 14 / 2; }
+
+.inews { 
+    grid-area: 7 / 2 / 14 / 5;
+    background-image: url('data/pics/prometheus.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:right;
+    color:white; 
+ }
+.lectures { 
+    grid-area: 7 / 5 / 14 / 6;
+    background-image: url('data/pics/auditorium.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:right;
+    color:white;
+}
+.stud { 
+    grid-area: 7 / 6 / 14 / 7;
+    background-image: url('data/pics/students.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:right;
+    color:white;
+    font-weight: 800;
+ }
+.morenews { 
+    grid-area: 13 / 6 / 14 / 7;
+    text-align: center;
+    padding: 1vw;
+    background-color: white;
+ }
+
+.highfont{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3vw;
+    line-height: 4.8vw;
+    text-align: right;
+    text-transform: uppercase;
+}
+</style>
+<header>
+    <div class = "navbar">
+        <div class="navschedule">
+            <p>Розклад занять</p>
+        </div>
+        <div class="search">
+            <p>Пошук</p>
+        </div>
+        <div class="navphone">
+             <p>+0000000000</p>
+        </div>
+        <div class="navtop">
+            <p>Навчально-науковий інститут атомної та теплової енергетики</p>
+        </div>
+        <div class="navlogo">
+            
+        </div>
+        <div class="navmenu"> 
+            <p>menu</p>
+        </div>
+    </div>
+</header>
+<body>
+        <div class="parent">
+            <div class="cathedra"> 
+                <h1 class="highfont">наші кафедри</h1>
+            </div>
+            <div class="ipze"> </div>
+            <div class="tzte"> </div>
+            <div class="ae"> </div>
+            <div class="tae"> </div>
+            <div class="aep"> </div>
+            <div class="news"> </div>
+            <div class="inews">
+                    <h1 class="highfont" style="padding-top:30vw">новини інституту</h1>
+                    <p>Кафедра інженерії програмного <br> забезпечення в енергетиці</p>
+            </div>
+            <div class="lectures"> 
+
+            </div>
+            <div class="stud">
+
+            </div>
+            <div class="morenews">
+                <p>Більше новин</p>
+            </div>
+            
+        </div>
+</body>
+<footer>
+    <div>abc</div>
+</footer>
