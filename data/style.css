@@ -103,6 +103,28 @@
     grid-row-gap: 0px;
     color:#1C3964;
 }
+
+
+.superheroeswrap {
+    width: 100%;
+    height: 70vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(19, 1fr);
+    color:#1C3964;
+}
+
+
+.phdwrap {
+    width: 100%;
+    height: 30vw;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color:#1C3964;
+}
     
   
   
@@ -403,7 +425,151 @@
 .years2 { grid-area: 12 / 3 / 15 / 4; }
 .price2 { grid-area: 15 / 2 / 17 / 3; }
 .jobexamples2 { grid-area: 15 / 3 / 17 / 4; }
+/*Superheroes css*/
+    
+.superheroeshead { grid-area: 1 / 1 / 4 / 3; }
+.superheroesinfo { grid-area: 4 / 1 / 14 / 3; }
+.superheroesmenu { 
+    grid-area: 1 / 3 / 2 / 6;
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    text-align:right;
+    font-weight: 680;
+}
+.menufaculty{
+    grid-area: 1 / 1 / 2 / 4;
+}
+.menuspecialty{
+    grid-area: 1 / 4 / 2 / 7; 
+}
+.menudormitory{
+    grid-area: 1 / 7 / 2 / 8; 
+}
 
+.frame1 { 
+    grid-area: 2 / 3 / 8 / 4;
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+ }
+.frame2 { 
+    grid-area: 8 / 3 / 14 / 4; 
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.frame3 { 
+    grid-area: 2 / 4 / 8 / 5; 
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.frame4 { 
+    grid-area: 8 / 4 / 14 / 5; 
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.frame5 { 
+    grid-area: 2 / 5 / 8 / 6; 
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.frame6 { 
+    grid-area: 8 / 5 / 14 / 6;
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+ }
+.frame7 { 
+    grid-area: 14 / 1 / 20 / 2; 
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.frame8 { 
+    grid-area: 14 / 2 / 20 / 3; 
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.frame9 { 
+    grid-area: 14 / 3 / 20 / 4; 
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.frame10 { 
+    grid-area: 14 / 4 / 20 / 5; 
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.frame11 { 
+    grid-area: 14 / 5 / 20 / 6; 
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.gridforphoto{
+    grid-area: 1 / 1 / 4 / 2;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    text-align: right;
+    color:white;
+}
+.gridforabout{
+    grid-area: 4 / 1 / 6 / 2;
+}
+
+.photo1{
+    background-image: url('pics/1yulia.png'); 
+}
+.photo2{
+    background-image: url('pics/1victoria.png'); 
+}
+.photo3{
+    background-image: url('pics/1maksim.png'); 
+}
+.photo4{
+    background-image: url('pics/1tanya.png'); 
+}
+.photo5{
+    background-image: url('pics/1yegor.png'); 
+}
+.photo6{
+    background-image: url('pics/1veronika.png'); 
+}
+.photo7{
+    background-image: url('pics/2yulia.png'); 
+}
+.photo8{
+    background-image: url('pics/1yaroslav.png'); 
+}
+.photo9{
+    background-image: url('pics/3yulia.png'); 
+}
+.photo10{
+    background-image: url('pics/1kolya.png'); 
+}
+.photo11{
+    background-image: url('pics/1hlib.png'); 
+}
+
+/*Phd css*/
+    
+.phdhead { grid-area: 1 / 1 / 2 / 6; }
+.phdfiles { grid-area: 2 / 1 / 5 / 6; }
+.phdnews { 
+    color:white;
+    text-align:right;
+    grid-area: 1 / 6 / 5 / 8;
+    background-image: url('pics/auditorium.png');
+    background-size: cover;
+ }
 
 /*Fonts and some other components css*/
 .highfont{
