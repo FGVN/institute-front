@@ -14,9 +14,9 @@
 /*Content wrapers*/
 .headerwrap{
       width: 100%;
-      height: 11vw;
+      height: 13vw;
       display: grid;
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(10, 1fr);
       grid-template-rows: repeat(4, 1fr);
       text-align: right;
       font-weight: 800;
@@ -24,7 +24,7 @@
 }
 
 .topmenuwrap{
-    grid-area: 2 / 2 / 3 / 8;
+    grid-area: 2 / 2 / 3 / 11;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -33,6 +33,7 @@
 
 .footerwrap {
     display: grid;
+    height: 20vw;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 8fr 1fr;
     grid-column-gap: 0px;
@@ -42,16 +43,16 @@
 
 .homepagecontentwrap {
     width: 100%;
-    height: 60vw;
+    height: 65vw;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(14, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     font-weight: 800;
     color:#1C3964;
 }
 .newswrap{
     width: 100%;
-    height: 60vw;
+    height: 65vw;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(14, 1fr);
@@ -125,13 +126,25 @@
     grid-row-gap: 0px;
     color:#1C3964;
 }
+
+
+.magistracywrap {
+    width: 100%;
+    height: 80vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color:#1C3964;
+}
     
   
   
   
   /*Header css*/
   .navtop { 
-      grid-area: 1 / 1 / 2 / 8;
+      grid-area: 1 / 1 / 2 / 11;
   
    }
   .navlogo { 
@@ -140,14 +153,18 @@
   .navphone { grid-area: 1 / 1 / 2 / 2; }
   .navsearch{ grid-area: 1 / 2 / 2 / 3; }
   .navschedule { grid-area: 1 / 3 / 2 / 4 }
-  
-  .navmenu { 
-    grid-area: 3 / 2 / 5 / 8;
+  .menuwrap{
+
     display: grid;
     text-align:center;
-    grid-template-columns: repeat(8, 1fr);
+    vertical-align: middle;
+    grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(1, 1fr);
+  }
+  .navmenu { 
+    grid-area: 3 / 2 / 5 / 11;
  }
+
   
 
 /*Footer css*/
@@ -179,26 +196,26 @@
 
 /*Homepage css*/
 .cathedra { 
-    grid-area: 1 / 1 / 3 / 3;
+    grid-area: 1 / 1 / 3 / 7;
 }
 .ipze { 
-    grid-area: 3 / 1 / 7 / 3;
+    grid-area: 3 / 1 / 7 / 7;
  }
 
 .tzte {
-     grid-area: 1 / 3 / 7 / 4;
+     grid-area: 1 / 7 / 7 / 10;
 }
 
 
-.ae { grid-area: 1 / 4 / 4 / 6; }
-.tae { grid-area: 4 / 4 / 7 / 6; }
+.ae { grid-area: 1 / 10 / 4 / 17; }
+.tae { grid-area: 4 / 10 / 7 / 17; }
 
-.aep { grid-area: 1 / 6 / 7 / 7; }
+.aep { grid-area: 1 / 17 / 7 / 21; }
 
-.news { grid-area: 7 / 1 / 15 / 2; }
+.news { grid-area: 7 / 1 / 14 / 4 ; }
 
 .inews { 
-    grid-area: 7 / 2 / 15 / 5;
+    grid-area: 7 / 4 / 14 / 13;
     background-image: url('pics/prometheus.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -206,7 +223,7 @@
     color:white; 
  }
 .lectures { 
-    grid-area: 7 / 5 / 15 / 6;
+    grid-area: 7 / 13 / 14 / 17;
     background-image: url('pics/auditorium.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -214,7 +231,7 @@
     color:white;
 }
 .stud { 
-    grid-area: 7 / 6 / 15 / 7;
+    grid-area: 7 / 17 / 14 / 21;
     background-image: url('pics/students.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -223,7 +240,7 @@
     font-weight: 800;
  }
 .morenews { 
-    grid-area: 14 / 6 / 15 / 7;
+    grid-area: 13 / 17 / 14 / 21;
     text-align: center;
     padding: 1vw;
     background-color: white;
@@ -386,7 +403,7 @@
 .specialtycode1{
     grid-area: 1 / 1 / 2 / 2;
     color: white;
-    background-color: yellow;
+    background-color: #FFD600;
     text-align: center;
 }
 .specialtyname1{
@@ -412,7 +429,7 @@
 .specialtycode2{
     grid-area: 1 / 1 / 2 / 2;
     color: white;
-    background-color: yellow;
+    background-color: #FFD600;
     text-align: center;
 }
 .specialtyname2{
@@ -569,14 +586,33 @@
     grid-area: 1 / 6 / 5 / 8;
     background-image: url('pics/auditorium.png');
     background-size: cover;
+}
+
+/*Magistracy css*/
+    
+.magistracyhead { grid-area: 1 / 1 / 2 / 3; }
+.magistracyformula { grid-area: 2 / 1 / 5 / 3; }
+.magistracyfiles { grid-area: 5 / 1 / 9 / 3; }
+.magistracyinfo1 { grid-area: 1 / 3 / 3 / 6; }
+.magistracycredits { 
+    grid-area: 3 / 3 / 4 / 6;
+    display:grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    background-color: #FFD600;
+    color:white;
  }
+.magistracyinfo2 { grid-area: 4 / 3 / 5 / 6; }
+.magistracyenglishexam { grid-area: 5 / 3 / 7 / 6; }
+.magistracydocuments { grid-area: 7 / 3 / 9 / 6; }
 
 /*Fonts and some other components css*/
 .highfont{
     font-style: normal;
     font-weight: 800;
-    font-size: 2.5vw;
-    line-height: 2vw;
+    font-size: 2vw;
+    line-height: 1vw;
 }
 .uppercase{
     text-transform: uppercase;
