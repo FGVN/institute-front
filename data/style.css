@@ -21,10 +21,16 @@ html { font-family: 'Inter', sans-serif; }
         margin: 0;
         font-family: 'Inter';
         font-style: normal;
-        font-size: 3vw;
-        line-height: 2vw;
+        font-size: 3.5vw;
+        line-height: 4vw;
         font-style: normal;
     }
+    html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
 }
 
 /*Content wrapers*/
@@ -77,36 +83,6 @@ html { font-family: 'Inter', sans-serif; }
     font-weight: 500;
 }
 
-.homepagecontentwrap {
-    width: 100%;
-    height: 66vw;
-    display: grid;
-    grid-template-columns: repeat(17, 1fr);
-    grid-template-rows: repeat(14, 1fr);
-    font-weight: 800;
-    color:#1C3964;
-}
-.newswrap{
-    width: 100%;
-    height: 65vw;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(14, 1fr);
-    font-weight: 800;
-    text-align: right;
-    color:white;
-}
-
-.sciencewrap {
-    width: 100%;
-    height: 33vw;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    color:#1C3964;
-}
 
 .conferenceswrap{
     width: 100%;
@@ -256,16 +232,26 @@ html { font-family: 'Inter', sans-serif; }
 
   @media screen and (max-width:768px){
     .navphone{
-        grid-area: 2 / 1 / 3 / 3;
-        text-align: center;
+        grid-area: 1 / 1 / 2 / 3;
+        text-align: right;
+    }
+
+    .navphone p {
+        margin-right:5vw;
+        margin-top:5vw;
     }
   }
   .navschedule { grid-area: 1 / 3 / 2 / 4 }
   
   @media screen and (max-width:768px){
     .navschedule{
-        grid-area: 1 / 1 / 2 / 3;
-        text-align: center;
+        grid-area: 2 / 1 / 3 / 3;
+        text-align: right;
+    }
+
+    .navschedule p {
+        margin-right:5vw;
+        margin-top:5vw;
     }
   }
 
@@ -437,11 +423,138 @@ html { font-family: 'Inter', sans-serif; }
 
 
 /*Homepage css*/
+@media screen and (max-width:768px){
+    .homepagecontentwrap{
+        width: 100%;
+        height: 380vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(53, 1fr);
+        font-weight: 800;
+        color:#1C3964;
+    }
+
+    .homepagecontentwrap div h1 img{
+        height:8vw;
+    }
+
+    .cathedra { 
+        grid-area: 1 / 1 / 6 / 2;
+    }
+    .cathedra h1{
+        margin-top:15vw;
+        line-height: 7vw;
+    }
+    .ipze { 
+        grid-area: 6 / 1 / 14 / 2;
+    }
+    .ipze h1{
+        margin-top: 43vw;
+        margin-left:18vw;
+    }
+    .tzte {
+        grid-area: 1 / 2 / 11 / 3;
+    }
+
+
+    .ae { grid-area: 14 / 1 / 22 / 2; }
+
+    .ae h1{
+        margin-top:42vw; 
+        text-indent: 1vw;
+    }
+
+    .aep { grid-area: 11 / 2 / 22 / 3; }
+
+    .aep h1{
+        margin-left: 1vw; 
+        margin-top: 44vw; 
+        writing-mode:vertical-rl;
+    }
+
+    .tae { grid-area: 22 / 1 / 28 / 3; }
+
+    .news { grid-area: 28 / 1 / 31 / 3; }
+    .news h1{
+        margin-left: 4vw; 
+        margin-top: 10vw; 
+    }
+
+
+    .inews { 
+        grid-area: 31 / 1 / 43 / 3;
+        background-image: url('pics/prometheus.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align:right;
+        color:white; 
+    }
+
+    .inews div h1{
+        padding-top:60vw;
+     }
+    
+
+    .lectures { 
+        grid-area: 43 / 1 / 54/ 2;
+        background-image: url('pics/auditorium.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align:right;
+        color:white;
+    }
+    .lectures div h1{
+        padding-top:55vw;
+    }
+    .stud { 
+        grid-area: 43 / 2 / 54 / 3;
+        background-image: url('pics/students.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align:right;
+        color:white;
+        font-weight: 800;
+    }
+    .stud div h1{
+        padding-top:55vw;
+    }
+    .morenews { 
+        grid-area: 52 / 2 / 54 / 3;
+        text-align: center;
+        padding: 1vw;
+        background-color: white;
+        margin-top:5vw;
+    }
+}
+
+@media screen and (min-width:769px){
+.homepagecontentwrap {
+    width: 100%;
+    height: 66vw;
+    display: grid;
+    grid-template-columns: repeat(17, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    font-weight: 800;
+    color:#1C3964;
+}
+
+
+.homepagecontentwrap div h1 img{
+    height: 2vw;
+}
 .cathedra { 
     grid-area: 1 / 1 / 3 / 6;
 }
+.cathedra h1{
+    line-height:2vw;
+    margin-top:2vw; 
+}
 .ipze { 
     grid-area: 3 / 1 / 8 / 6;
+ }
+ .ipze h1{
+    margin-top: 20vw; 
+    margin-left:20vw;
  }
 
 .tzte {
@@ -450,11 +563,29 @@ html { font-family: 'Inter', sans-serif; }
 
 
 .ae { grid-area: 1 / 9 / 4 / 15; }
+
+.ae h1{
+    margin-top:10vw; 
+    text-indent: 1vw;
+}
+
 .tae { grid-area: 4 / 9 / 8 / 15; }
 
 .aep { grid-area: 1 / 15 / 8 / 18; }
 
+
+.aep h1{
+    margin-left: 1vw; 
+    margin-top: 25vw; 
+    writing-mode:vertical-rl;
+}
+
 .news { grid-area: 8 / 1 / 15 / 3; }
+.news h1{
+    margin-left: 8vw; 
+    margin-top: 23vw; 
+    writing-mode:vertical-rl;
+}
 
 .inews { 
     grid-area: 8 / 3 / 15 / 12;
@@ -464,6 +595,9 @@ html { font-family: 'Inter', sans-serif; }
     text-align:right;
     color:white; 
  }
+ .inews div h1{
+    padding-top:25vw;
+ }
 .lectures { 
     grid-area: 8 / 12 / 15 / 15;
     background-image: url('pics/auditorium.png');
@@ -471,6 +605,9 @@ html { font-family: 'Inter', sans-serif; }
     background-size: cover;
     text-align:right;
     color:white;
+}
+.lectures div h1{
+    padding-top:25vw
 }
 .stud { 
     grid-area: 8 / 15 / 15 / 18;
@@ -481,14 +618,99 @@ html { font-family: 'Inter', sans-serif; }
     color:white;
     font-weight: 800;
  }
+ .stud div h1{
+    padding-top:25vw;
+ }
 .morenews { 
     grid-area: 14 / 15 / 15 / 18;
     text-align: center;
     padding: 1vw;
     background-color: white;
+    margin-top:1vw;
  }
+}
 
 /*Newspage css*/
+@media screen and (max-width:768px){
+    .newswrap{
+        width: 100%;
+        height: 300vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(17, 1fr);
+        font-weight: 800;
+        text-align: right;
+        color:white;
+    }
+    .newswrap div h1{
+        margin-top:42vw;
+        margin-right:2vw;
+    }
+    .newswrap div p{
+        margin-right: 2vw;
+    }
+    .newswrap div .highfont{
+        font-size:4vw;
+    }
+    .newshead { 
+        grid-area: 1 / 1 / 2 / 3;
+        color:#1C3964;
+        text-align: left;
+     }
+     
+    .nlectures { 
+        grid-area: 2 / 1 / 6 / 2;
+        background-image: url("pics/auditorium.png");
+        background-size: cover;
+     }
+    .facultynews { 
+        grid-area: 2 / 2 / 6 / 3;
+        background-image: url("pics/students.png");
+        background-size: cover;
+     }
+    .library { 
+        grid-area: 6 / 1 / 10 / 2;
+        background-image: url("pics/library.png");
+        background-size: cover;
+     }
+    .events { 
+        grid-area: 6 / 2 / 10 / 3;
+        background-image: url("pics/student.png");
+        background-size: cover;
+     }
+    .learning { 
+        grid-area: 10 / 1 / 14 / 2;
+        background-image: url("pics/books.png");
+        background-size: cover;
+     }
+    .faculty { 
+        grid-area: 10 / 2 / 14 / 3;
+        background-image: url("pics/learning.png");
+        background-size: cover;
+     }
+    .studrad { 
+        grid-area: 14 / 1 / 18 / 2;
+        background-image: url("pics/students2.png");
+        background-size: cover;
+     }
+    .fridayevents { 
+        grid-area: 14 / 2 / 18 / 3;
+        background-image: url("pics/culture\ palace.png");
+        background-size: cover;
+     }
+}
+
+@media screen and (min-width:769px){
+.newswrap{
+    width: 100%;
+    height: 65vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    font-weight: 800;
+    text-align: right;
+    color:white;
+}
 .newshead { 
     grid-area: 1 / 1 / 3 / 2;
     color:#1C3964;
@@ -499,48 +721,156 @@ html { font-family: 'Inter', sans-serif; }
     background-image: url("pics/auditorium.png");
     background-size: cover;
  }
+ .nlectures h1{
+    padding-top:16vw;
+ }
 .facultynews { 
     grid-area: 1 / 2 / 8 / 3;
     background-image: url("pics/students.png");
     background-size: cover;
  }
+ .facultynews h1{
+    padding-top:22vw;
+    line-height: 2vw; 
+    width:60%; 
+    text-align: right; 
+    margin-left:10vw;
+ } 
 .library { 
     grid-area: 1 / 3 / 8 / 4;
     background-image: url("pics/library.png");
     background-size: cover;
+ }
+ .library h1{
+    padding-top:25vw;
  }
 .events { 
     grid-area: 1 / 4 / 8 / 5;
     background-image: url("pics/student.png");
     background-size: cover;
  }
+ .events h1{
+    padding-top:25vw;
+ }
 .learning { 
     grid-area: 8 / 1 / 15 / 2;
     background-image: url("pics/books.png");
     background-size: cover;
+ }
+ .learning h1{
+    padding-top:25vw;
  }
 .faculty { 
     grid-area: 8 / 2 / 15 / 3;
     background-image: url("pics/learning.png");
     background-size: cover;
  }
+ .faculty h1{
+    padding-top:25vw;
+ }
 .studrad { 
     grid-area: 8 / 3 / 15 / 4;
     background-image: url("pics/students2.png");
     background-size: cover;
+ }
+ .studrad h1{
+    padding-top:25vw;
  }
 .fridayevents { 
     grid-area: 8 / 4 / 15 / 5;
     background-image: url("pics/culture\ palace.png");
     background-size: cover;
  }
+ .fridayevents h1{
+    padding-top:25vw;
+ }
+}
 
 /*Science css*/
+@media screen and (max-width:768px){
+   
+.sciencewrap {
+    width:100%;
+    height: 380vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color:#1C3964;
+}
+.sciencehead { 
+    grid-area: 1 / 1 / 2 / 3;
+}
+.sciencehead p{
+    margin-top:3vw; 
+    margin-left:2vw; 
+    width:90%; 
+    line-height:7vw; 
+    text-align:left;
+}
+.sciencetext {
+    grid-area: 2 / 1 / 8 / 3;
+    display: grid;
+    grid-template-columns: 3;
+    color: #1C3964;
+}
+.sciencetext p{
+    margin-right:1vw;
+    margin-top:4vw;
+    margin-left:2vw;
+    margin-bottom: 4vw;
+}
+
+.scienceawardsimg {
+    grid-area: 8 / 1 / 10 / 3;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+.scienceawardsimg img{
+    height: 65vw;
+}
+
+
+
+.sciencefiles {
+    grid-area: 10 / 1 / 13 / 3;
+}
+.sciencefiles p{
+    margin-top:15vw;
+    margin-left:5vw;
+}
+
+
+}
+@media screen and (min-width:769px){
+
+.sciencewrap {
+    width: 100%;
+    height: 33vw;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color:#1C3964;
+}
 .sciencehead { 
     grid-area: 1 / 1 / 2 / 4;
 }
+.sciencehead p{
+    margin-top:3vw; 
+    margin-left:2vw; 
+    width:60%; 
+    line-height:2vw; 
+    text-align:left;
+}
 .sciencefiles {
     grid-area: 2 / 1 / 4 / 4;
+}
+.sciencefiles p{
+    margin-left:3vw;
 }
 .sciencetext {
     grid-area: 1 / 4 / 4 / 8;
@@ -548,24 +878,102 @@ html { font-family: 'Inter', sans-serif; }
     grid-template-columns: 3;
     color: #1C3964;
 }
+.sciencetext p{
+    margin-top:6vw;
+     margin-right:2vw;
+      margin-left: 4vw;
+       line-height: 1.5vw;
+}
+
+}
+
 
 /*Scienceawards css*/
-.scienceawardshead { 
-    grid-area: 1 / 1 / 2 / 4;
+@media screen and (max-width:768px){
+    .scienceawardswrap {
+        width: 100%;
+        height: 230vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        color:#1C3964;
+    }
+    .scienceawardshead { 
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    .scienceawardshead p{
+        margin-left:3vw;
+    }
+    .scienceawardshead .subtitle{
+        margin-top:6vw;
+    }
+    .scienceawardstext {
+        grid-area: 2 / 1 / 6 / 3;
+        display: grid;
+        grid-template-columns: 3;
+        color: #1C3964;
+    }
+    .scienceawardstext p{
+        margin-right:2vw;
+        margin-top:6vw;
+        margin-left:4vw;
+        margin-bottom: 4vw;
+    }
+    
+    .scienceawards {
+        grid-area: 6 / 1 / 8 / 3;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    
+    .scienceawards img{
+        height:63vw;
+    }
+    
 }
-.scienceawards {
-    grid-area: 2 / 1 / 4 / 4;
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-}
-.scienceawardstext {
-    grid-area: 1 / 4 / 4 / 8;
-}
-
-.award{
-    background-image: url("pics/award.png");
-    background-size: cover;
+@media screen and (min-width:769px){
+    .scienceawardswrap {
+        width: 100%;
+        height: 33vw;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        color:#1C3964;
+    }
+    .scienceawardshead{
+        grid-area: 1 / 1 / 2 / 4;
+    }
+    .scienceawardshead p{
+        margin-top:3vw; 
+        margin-left:2vw; 
+        width:60%; 
+        line-height:2vw; 
+        text-align:left;
+    }
+    .scienceawardstext {
+        grid-area: 1 / 4 / 4 / 8;
+    }
+    .scienceawardstext p{
+        margin-top:6vw;
+         margin-right:2vw;
+          margin-left: 4vw; 
+          line-height: 1.5vw;
+    }
+    .scienceawards {
+        grid-area: 2 / 1 / 4 / 4;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .scienceawards img{
+        height: 20vw;
+    }
+    
 }
 
 /*Conferences css*/
@@ -1101,23 +1509,43 @@ html { font-family: 'Inter', sans-serif; }
 
 
 /*Fonts and some other components css*/
-.highfont{
-    font-style: normal;
-    font-weight: 800;
-    font-size: 2vw;
-    line-height: 1vw;
+@media screen and (min-width:769px){
+
+    .highfont{
+        font-style: normal;
+        font-weight: 800;
+        font-size: 2vw;
+        line-height: 1vw;
+    }
+    .midfont{
+        font-weight: 800;
+        font-size: 1.5vw;
+    }
+    .lowfont{
+        font-weight: 500;
+        line-height: 1vw;
+        font-size: 1vw;
+    }
+}
+@media screen and (max-width:768px){
+    .highfont{
+        font-style: normal;
+        font-weight: 800;
+        font-size: 7vw;
+        line-height: 7vw;
+    }
+    .midfont{
+        font-weight: 800;
+        font-size: 1.5vw;
+    }
+    .lowfont{
+        font-weight: 500;
+        line-height: 3vw;
+        font-size: 3vw;
+    }
 }
 .uppercase{
     text-transform: uppercase;
-}
-.midfont{
-    font-weight: 800;
-    font-size: 1.5vw;
-}
-.lowfont{
-    font-weight: 500;
-    line-height: 1vw;
-    font-size: 1vw;
 }
 .border{
     border: 0.05vw solid #1C3964;
@@ -1160,10 +1588,9 @@ p{
       **/
       .hamburger {
         position: absolute;
-        top: 5em;
+        top: 13vw;
         right: 5%;
-        margin-right: 4vw;
-        margin-top: -4vw;
+        margin-right: 3vw;
         width: 10vw;
         height: 45px;
         z-index: 5;
@@ -1175,7 +1602,7 @@ p{
         height: 7px;
         border-radius: 3px;
         background-color: #1C3964;
-        margin-top: 8px;
+        margin-top: 2.5vw;
         transition: all 0.3s ease-in-out;
       }
       
