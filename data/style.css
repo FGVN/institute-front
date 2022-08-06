@@ -87,46 +87,9 @@ html { font-family: 'Inter', sans-serif; }
 
 
 
-.courseswrap{
-    display:grid;
-    width: 100%;
-    height: 56vw;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(40, 1fr);
-    color:#1C3964;
-}
 
-.docswrap {
-    width: 100%;
-    height: 35vw;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    color:#1C3964;
-}
 
-.facultyinfowrap{
-    
-    width: 100%;
-    height: 67vw;
-    display: grid;
-    grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: repeat(14, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    color:#1C3964;
-}
 
-.historywrap{
-    width: 100%;
-    height: 67vw;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    color:#1C3964;
-}
 
 
 /*Header css*/
@@ -1696,7 +1659,7 @@ html { font-family: 'Inter', sans-serif; }
         height: 180vw;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         color:#1C3964;
@@ -1708,9 +1671,10 @@ html { font-family: 'Inter', sans-serif; }
         line-height: 8vw;
         width:80%;
     }
-    .phdfiles { grid-area: 2 / 1 / 5 / 2; }
+    .phdfiles { grid-area: 2 / 1 / 9 / 2; }
     .phdfiles div p{
         margin-top:8vw;
+        margin-left:4vw;
     }
 }
 @media screen and (min-width:769px){
@@ -2281,134 +2245,628 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 /*Courses css*/
+@media screen and (max-width:768px){
 
-.courseshead{
-    grid-area: 1 / 1 / 8 / 5;
-}
-.coursesinfo{
-    grid-area: 8 / 1 / 25 / 5;
-}
-.coursestable{
-    display:grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(24, 1fr);
-    grid-area: 1 / 5 / 25 / 11;
-}
-.coursesentryinfo{
-    grid-area: 25 / 1 / 41 / 5;
-}
-.coursesdate{
-    grid-area: 25 / 5 / 41 / 8;
-}
-.coursesdocuments{
-    grid-area: 25 / 8 / 41 / 11;
-}
+    .courseswrap{
+        display:grid;
+        width: 100%;
+        height: 600vw;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(24, 1fr);
+        color:#1C3964;
+    }
+    .courseshead{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .courseshead p{
+        margin-top:12vw;
+    }
+    .coursesinfo{
+        grid-area: 2 / 1 / 5 / 2;
+    }
+    .coursesinfo p{
+        margin-top:10vw;
+        padding:4vw;
+        font-size:3.5vw;
+        line-height:4vw;
+    }
+    .coursestable{
+        grid-area: 5 / 1 / 18 / 2;
+        display:grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(24, 1fr);
+    }
+    .coursesentryinfo{
+        grid-area: 18 / 1 / 21 / 2;
+    }
+    .coursesentryinfo p{
+        padding: 2vw;
+        margin-top: 20vw;
+        line-height: 4vw;
+        font-size:3.5vw;
+    }
+    .coursesdate{
+        grid-area: 21 / 1 / 25 / 2;
+    }
+    .coursesdate p{
+        padding: 2vw;
+        line-height:4vw;
+        font-size:3.5vw;
+        margin-top: 10vw;
+    }
+    .coursesdocuments{
+        display:none;
+    }
 
-.coursessubjectshead{
-    color:white;
-    background-color: #FFD600;
-    grid-area: 1 / 1 / 3 /6;
-}
-.coursessubjects{
-    grid-area: 3 / 1 / 8 /6;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
+    .coursessubjectshead{
+        color:white;
+        background-color: #FFD600;
+        grid-area: 1 / 1 / 2 /6;
+    }
+    .coursessubjectshead p{
+        font-size: 5vw;
+        height:10vw;
+        margin-top: 6vw;
+        margin-left:2vw;
+        font-weight: 800;
+    }
+    .coursessubjects{
+        grid-area: 2 / 1 / 8 /6;
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        margin-top:5vw;
+        margin-left:25vw;
+    }
+    .coursessubjects div{
+        border: none;
+    }
+    .coursessubjects div p{
+        font-size:3.5vw;
+    }
 
-.coursesformshead{
-    color:white;
-    background-color: #FFD600;
-    grid-area: 8 / 1 / 10 /6;
-}
-.coursesforms{
-    grid-area: 10 / 1 / 15 / 6;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
+    .coursesformshead{
+        color:white;
+        background-color: #FFD600;
+        grid-area: 8 / 1 / 9 /6;
+    }
+    .coursesformshead p{
+        font-size: 5vw;
+        height:10vw;
+        margin-top: 6vw;
+        margin-left:2vw;
+        font-weight: 800;
+    }
+    .coursesforms{
+        grid-area: 9 / 1 / 15 / 6;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        margin-top:5vw;
+        margin-left:25vw;
+    }
+    .coursesforms div{
+        border: none;
+    }
 
-.coursesadvantageshead{
-    color:white;
-    background-color: #FFD600;
-    grid-area: 15 / 1 / 17 /6;
+    .coursesadvantageshead{
+        color:white;
+        background-color: #FFD600;
+        grid-area: 15 / 1 / 16 /6;
+    }
+    .coursesadvantageshead p{
+        font-size: 5vw;
+        height:10vw;
+        margin-top: 6vw;
+        margin-left:2vw;
+        font-weight: 800;
+    }
+    .coursesadvantages{
+        grid-area: 16 / 1 / 25 / 6;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        margin-top:2vw;
+        margin-left:25vw;
+        width:60%;
+    }
+    .coursesadvantages div{
+        border:none;
+    }
 }
-.coursesadvantages{
-    grid-area: 17 / 1 / 25 / 6;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+@media screen and (min-width:769px){
+
+    .courseswrap{
+        display:grid;
+        width: 100%;
+        height: 56vw;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(40, 1fr);
+        color:#1C3964;
+    }
+
+    .courseshead{
+        grid-area: 1 / 1 / 8 / 5;
+    }
+    .courseshead p{
+        margin-top: 5vw; 
+        margin-left:1vw;
+    }
+
+    .coursesinfo{
+        grid-area: 8 / 1 / 25 / 5;
+    }
+    .coursesinfo p{
+        line-height:1.2vw; 
+        margin-left:1vw; 
+        margin-top: 4vw; 
+        width:90%;
+    }
+
+    .coursestable{
+        display:grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(24, 1fr);
+        grid-area: 1 / 5 / 25 / 11;
+    }
+
+    .coursesentryinfo{
+        grid-area: 25 / 1 / 41 / 5;
+    }
+    .coursesentryinfo p{
+        line-height:1.2vw; 
+        margin-left:1vw; 
+        margin-top: 4vw; 
+        width:90%;
+    }
+    .coursesdate{
+        grid-area: 25 / 5 / 41 / 8;
+    }
+    .coursesdate p{
+        line-height:1.2vw; 
+        margin-left:1vw; 
+        margin-top: 4vw; 
+        width:90%;
+    }
+    .coursesdocuments{
+        grid-area: 25 / 8 / 41 / 11;
+    }
+    .coursesdocuments p{
+        line-height:1.2vw; 
+        margin-left:1vw; 
+        margin-top: 4vw; 
+        width:90%;
+    }
+    
+    .coursessubjectshead{
+        color:white;
+        background-color: #FFD600;
+        grid-area: 1 / 1 / 3 /6;
+    }
+    .coursessubjectshead p{
+        font-weight: 800; 
+        margin-top:0.2vw; 
+        margin-left: 1vw;
+    }
+    .coursessubjects{
+        grid-area: 3 / 1 / 8 /6;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .coursessubjects div p{
+        margin-top:2vw; 
+        margin-left:1vw; 
+        width:80%;
+    }
+    
+    .coursesformshead{
+        color:white;
+        background-color: #FFD600;
+        grid-area: 8 / 1 / 10 /6;
+    }
+    .coursesformshead p{
+        font-weight: 800; 
+        margin-top:0.2vw; 
+        margin-left: 1vw;
+    }
+    .coursesforms{
+        grid-area: 10 / 1 / 15 / 6;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .coursesforms div h1{
+        margin-top:1vw; 
+        margin-left:1vw; 
+        width:80%; 
+        font-weight:700;
+    }
+    .coursesforms div p{
+        margin-left:1vw; 
+        font-weight:500;
+    }
+    
+    .coursesadvantageshead{
+        color:white;
+        background-color: #FFD600;
+        grid-area: 15 / 1 / 17 /6;
+    }
+    .coursesadvantageshead p{
+        font-weight: 800; 
+        margin-top:0.2vw; 
+        margin-left: 1vw;
+    }
+    .coursesadvantages{
+        grid-area: 17 / 1 / 25 / 6;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .coursesadvantages div h1{
+        margin-top:2vw; 
+        margin-left:1vw; 
+        font-weight:700;
+    }
+    .coursesadvantages div p{
+        margin-left:1vw; 
+        font-weight:500; 
+        width:80%; 
+        line-height: 1vw;
+    }
 }
 
 
   
  /*Docs css*/
- .docshead { grid-area: 1 / 1 / 2 / 6; }
- .docsfiles { 
-    grid-area: 2 / 1 / 5 / 6;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
- }
- .docsnews { 
-     color:white;
-     text-align:right;
-     grid-area: 1 / 6 / 5 / 8;
-     background-image: url('pics/auditorium.png');
-     background-size: cover;
-  }
+@media screen and (max-width:768px){
+    .docswrap {
+        width: 100%;
+        height: 200vw;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        color:#1C3964;
+    }
+    .docshead { grid-area: 1 / 1 / 2 / 2; }
+    .docshead p{
+        margin-top:12vw; 
+        margin-left:4vw;
+        line-height: 9vw;
+        width:90%;
+    }
+    .docsfiles { grid-area: 2 / 1 / 5 / 2; }
+    .docsfiles div{
+        margin-top:10vw;
+    }
+    .docsfiles div p{
+        padding:4vw;
+        margin-top: -3vw;
+    }
+}
+@media screen and (min-width:769px){
+    .docswrap {
+        width: 100%;
+        height: 35vw;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        color:#1C3964;
+    }
+     .docshead { grid-area: 1 / 1 / 2 / 6; }
+     .docshead p{
+        font-size:2vw; 
+        padding:1vw; 
+        margin-top:4vw; 
+        margin-left:1vw;
+     }
+     .docsfiles { 
+        grid-area: 2 / 1 / 5 / 6;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+     }
+     .docsfiles div{
+        margin-top: 5vw; 
+        margin-left:5vw;
+     }
+     .docsfiles div p{
+        margin-top:-0.3vw;
+     }
+     .docsfiles docswide{
+        margin-top: 5vw;
+        margin-left:2vw; 
+        width:80%;
+     }
+     .docsfiles docswide p{
+        margin-top:3vw;
+        line-height: 1.5vw;
+     }
+     .docsnews { 
+         color:white;
+         text-align:right;
+         grid-area: 1 / 6 / 5 / 8;
+         background-image: url('pics/auditorium.png');
+         background-size: cover;
+      }
+}
 
 
 /*Facultyinfo css*/
-.facultyinfohead{
-    grid-area: 1 / 1 / 3 / 10;
+@media screen and (max-width:768px){
+    .facultyinfowrap{
+        width: 100%;
+        height: 600vw;
+        display: grid;
+        grid-template-rows: repeat(26, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        color:#1C3964;
+    }
+    .facultyinfohead{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .facultyinfohead p{
+        margin-top:8vw;
+        padding:2vw;
+    }
+    .facultyinfovideo{
+        grid-area: 2 / 1 / 4 / 2;
+    }
+    .facultyinfobanner{
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    .facultyinfobanner p{
+        padding:2vw;
+        margin-top:7vw;
+    }
+    .facultyinfolinks{
+        grid-area: 5 / 1 / 21 / 2;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        color:white;
+        text-align: right;
+    }
+    .facultyinfolinks div p{
+        margin-right:2vw;  
+        margin-top:45vw; 
+        line-height: 7vw;
+    }
+    .facultyinfocompanies{
+        grid-area: 21 / 1 / 26 / 2;
+    }
+    .facultyinfocompanies p{
+        color: #FFD600; 
+        font-weight: 700; 
+        font-size:5vw;
+        margin-top: 5vw; 
+        margin-left:2vw;
+    }
+    .facultyinfocompanieswrap{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0vw;
+        grid-row-gap: 2vw;
+        margin-top:10vw;
+        margin-left: 10vw;
+    }
 }
-.facultyinfocompanies{
-    grid-area: 3 / 1 / 8 / 10;
-}
-.facultyinfocompanieswrap{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0vw;
-    grid-row-gap: 2vw;
-}
-.facultyinfovideo{
-    grid-area: 1 / 10 / 8 / 21;
-}
-.facultyinfobanner{
-    grid-area: 8 / 1 / 15 / 4;
-}
-.facultyinfolinks{
-    grid-area: 8 / 4 / 15 / 21;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    color:white;
-    text-align: right;
-}
+@media screen and (min-width:769px){
+    .facultyinfowrap{
+        width: 100%;
+        height: 67vw;
+        display: grid;
+        grid-template-columns: repeat(20, 1fr);
+        grid-template-rows: repeat(14, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        color:#1C3964;
+    }
+    .facultyinfohead{
+        grid-area: 1 / 1 / 3 / 10;
+    }
+    .facultyinfohead p{
+        font-size:2vw; 
+        padding:1vw; 
+        margin-top:5vw; 
+        margin-left:1vw;
+    }
+    .facultyinfocompanies{
+        grid-area: 3 / 1 / 8 / 10;
+    }
+    .facultyinfocompanies p{
+        color: #FFD600; 
+        font-weight: 700; 
+        font-size: 1.3vw; 
+        margin-top: 2vw; 
+        margin-left:2vw;
+    }
+    .facultyinfocompanieswrap{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0vw;
+        grid-row-gap: 2vw;
+        margin-top:6vw; 
+        margin-left:2vw;
+    }
 
+    .facultyinfocompanieswrap .pic1{
+
+    }
+    .facultyinfocompanieswrap .pic2{
+        height:1.8vw;margin-left:-1.5vw;
+    }
+    .facultyinfocompanieswrap .pic3{
+        height:1.8vw;margin-left:-2vw;
+    }
+    .facultyinfocompanieswrap .pic4{
+        margin-left:-2.5vw;
+    }
+    .facultyinfocompanieswrap .pic5{
+        margin-left:-4vw;
+    }
+    .facultyinfocompanieswrap .pic6{
+
+    }
+    .facultyinfocompanieswrap .pic7{
+        margin-left:-2vw; margin-top:1vw;
+    }
+    .facultyinfocompanieswrap .pic8{
+        margin-left:-2.5vw;
+    }
+    .facultyinfocompanieswrap .pic9{
+        margin-left:-3vw; margin-top:1vw;
+    }
+    .facultyinfocompanieswrap .pic10{
+        margin-left:-3.5vw;
+    }
+    .facultyinfovideo{
+        grid-area: 1 / 10 / 8 / 21;
+    }
+    .facultyinfobanner{
+        grid-area: 8 / 1 / 15 / 4;
+    }
+    .facultyinfobanner p{
+        margin-left: 11vw; 
+        margin-top: 1vw; 
+        writing-mode:vertical-rl;
+    }
+    .facultyinfobanner .fliped{
+        display:none;
+    }
+    .facultyinfolinks{
+        grid-area: 8 / 4 / 15 / 21;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        color:white;
+        text-align: right;
+    }  
+    .facultyinfolinks div p{
+        margin-right:2vw;  
+        margin-top:12vw; 
+        line-height: 2vw;
+    }
+}
 /*History css*/
+@media screen and (max-width:768px){
 
-.historyhead{
-    grid-area: 1 / 1 / 2 / 5;
-}
-.historyphoto{
-    grid-area: 2 / 1 / 4 / 5;
-    background-image: url(pics/initiatives.png);
-    background-size: cover;
-}
-.historytext1{
-    grid-area: 1 / 5 / 4 / 11;
-    font-weight: 500;
-}
-.historytext2{
-    grid-area: 4 / 1 / 7 / 8;
-    font-weight: 500;
-}
-.historylectures{
-    grid-area: 4 / 8 / 7 / 11;
-    color: white;
-    text-align: right;
-    background-image: url(pics/auditorium.png);
+    .historywrap{
+        width: 100%;
+        height: 700vw;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        color:#1C3964;
+    }
+    .historyhead{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .historyhead p{
+        padding:2vw;
+        margin-top:20vw;
+        line-height: 8vw;
+    }
+    .historyphoto{
+        grid-area: 2 / 1 / 3 / 2;
+        background-image: url(pics/initiatives.png);
+        background-size: cover;
+    }
+    .historytext1{
+        grid-area: 3 / 1 / 6 / 2;
+        font-weight: 500;
+    }
+    .historytext1 p{
+        margin-top:10vw;
+        padding: 4vw;
+    }
+    .historylectures{
+        grid-area: 6 / 1 / 8 / 2;
+        color: white;
+        text-align: right;
+        width:70%;
+        background-image: url(pics/auditorium.png);
+    }
+    .historylectures h1{
+        display:none
+    }
+    .historylectures p{
+        display: none;
+    }
+    .historytext2{
+        grid-area: 8 / 1 / 13 / 2;
+        font-weight: 500;
+    }
+    .historytext2 p{
+
+        margin-top:10vw;
+        padding: 4vw;
+    }
+    
 }
 
+@media screen and (min-width:769px){
+
+    .historywrap{
+        width: 100%;
+        height: 67vw;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        color:#1C3964;
+    }
+    .historyhead{
+        grid-area: 1 / 1 / 2 / 5;
+    }
+    .historyhead p{
+        font-size:2vw; 
+        padding:1vw; 
+        margin-top:3vw; 
+        margin-left:1vw; 
+        line-height: 2vw;
+    }
+    .historyphoto{
+        grid-area: 2 / 1 / 4 / 5;
+        background-image: url(pics/initiatives.png);
+        background-size: cover;
+    }
+    .historytext1{
+        grid-area: 1 / 5 / 4 / 11;
+        font-weight: 500;
+    }
+    .historytext1 p{
+        line-height:1.3vw; 
+        margin-top:4vw; 
+        margin-left:5vw; 
+        margin-right:1vw;
+    }
+    .historytext2{
+        grid-area: 4 / 1 / 7 / 8;
+        font-weight: 500;
+    }
+    .historytext2 p{
+        line-height:1.2vw; 
+        margin-top:4vw; 
+        margin-left:1vw; 
+        margin-right:5vw;
+    }
+    .historylectures{
+        grid-area: 4 / 8 / 7 / 11;
+        color: white;
+        text-align: right;
+        background-image: url(pics/auditorium.png);
+    }
+    .historylectures h1{
+        margin-top:25vw; 
+        margin-right:1vw;
+    }
+    .historylectures p{
+        line-height:1vw; 
+        margin-right: 1vw;
+    }
+    
+}
 
 
 
