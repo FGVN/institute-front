@@ -2692,7 +2692,7 @@ html { font-family: 'Inter', sans-serif; }
     }
 
     .facultyinfocompanieswrap .pic1{
-
+        margin:0vw;
     }
     .facultyinfocompanieswrap .pic2{
         height:1.8vw;margin-left:-1.5vw;
@@ -2707,7 +2707,7 @@ html { font-family: 'Inter', sans-serif; }
         margin-left:-4vw;
     }
     .facultyinfocompanieswrap .pic6{
-
+        margin: 0vw;
     }
     .facultyinfocompanieswrap .pic7{
         margin-left:-2vw; margin-top:1vw;
