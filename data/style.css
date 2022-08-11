@@ -14,7 +14,7 @@ html { font-family: 'Inter', sans-serif; }
     line-height: 2vw;
     font-style: normal;
   }
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
     *{
         box-sizing: border-box;
         padding: 0;
@@ -38,7 +38,7 @@ html { font-family: 'Inter', sans-serif; }
 /*Header css*/
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 
     header{
         position: fixed;
@@ -105,7 +105,7 @@ html { font-family: 'Inter', sans-serif; }
     }
 }
 
-@media screen and (min-width:769px){
+@media screen and (min-width:768px){
 
     header{
         position: fixed;
@@ -151,6 +151,20 @@ html { font-family: 'Inter', sans-serif; }
   
   
     .navsearch{ grid-area: 1 / 2 / 2 / 3; }
+    .navsearch .lowfont{
+        border:none;
+        outline: none;
+        width:22vw; 
+        text-align:right; 
+        font-weight: 800; 
+        margin-right:1vw; 
+        color:#1C3964;
+    }
+    .navsearch:hover .lowfont{
+        background-color: #FFD600;
+        transition: all 0.3s ease-in-out;
+        color:white;
+    }
   
     
     .navmenu { 
@@ -183,7 +197,7 @@ html { font-family: 'Inter', sans-serif; }
 
 /*Footer css*/
 
-  @media screen and (max-width:768px){
+  @media screen and (max-width:767px){
     .notonmobile{
         display:none;
     }
@@ -258,10 +272,6 @@ html { font-family: 'Inter', sans-serif; }
         color:#1C3964;
         font-weight: 500;
     }
-    .credits .notondesktop p{
-        margin-left:20vw;
-        width:70%;
-    }
     .inline {
         display: inline-block;
         margin-left:10vw;
@@ -269,7 +279,7 @@ html { font-family: 'Inter', sans-serif; }
     }
  }
 
- @media screen and (min-width:769px){
+ @media screen and (min-width:768px){
     .footerwrap {
         color:#1C3964;
         display: grid;
@@ -278,6 +288,10 @@ html { font-family: 'Inter', sans-serif; }
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         font-weight: 500;
+    }
+    .footerwrap img:hover{
+        filter: invert(67%) sepia(93%) saturate(474%) hue-rotate(1deg) brightness(108%) contrast(102%);
+        transition: all 0.2s ease-in-out;
     }
     .notondesktop{
         display:none;
@@ -336,7 +350,7 @@ html { font-family: 'Inter', sans-serif; }
 
 
 /*Homepage css*/
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
     .homepagecontentwrap{
         width: 100%;
         height: 380vw;
@@ -369,6 +383,12 @@ html { font-family: 'Inter', sans-serif; }
         grid-area: 1 / 2 / 11 / 3;
     }
 
+    .tzte h1{
+        margin-left: 12vw; 
+        margin-top: 1vw; 
+        writing-mode:vertical-rl;
+    }
+
 
     .ae { grid-area: 14 / 1 / 22 / 2; }
 
@@ -381,7 +401,7 @@ html { font-family: 'Inter', sans-serif; }
 
     .aep h1{
         margin-left: 1vw; 
-        margin-top: 44vw; 
+        margin-top: 40vw; 
         writing-mode:vertical-rl;
     }
 
@@ -440,7 +460,7 @@ html { font-family: 'Inter', sans-serif; }
     }
 }
 
-@media screen and (min-width:769px){
+@media screen and (min-width:768px){
 .homepagecontentwrap {
     width: 100%;
     height: 66vw;
@@ -450,7 +470,6 @@ html { font-family: 'Inter', sans-serif; }
     font-weight: 800;
     color:#1C3964;
 }
-
 
 .homepagecontentwrap div h1 img{
     height: 2vw;
@@ -462,37 +481,230 @@ html { font-family: 'Inter', sans-serif; }
     line-height:2vw;
     margin-top:2vw; 
 }
+
 .ipze { 
     grid-area: 3 / 1 / 8 / 6;
+    background-image:url("https://i.pinimg.com/originals/f9/11/d3/f911d38579709636499618b6b3d9b6f6.jpg");
+    background-size:0vw;
+    text-align: right;
  }
  .ipze h1{
     margin-top: 20vw; 
+    margin-right:1vw;
+ }
+ .ipze:hover h1{
+    margin-top: 15vw; 
     margin-left:20vw;
  }
+ .ipze:hover{
+    background-image: url(pics/ipzebackground.png);
+    background-size:cover;
+    color: #1C3964;
+    transition: all 0.4s ease-in-out;
+}
+.ipze .onhover{
+    display:none;
+}
+.ipze:hover h1 .notonhover{
+    display:none;
+}
+.ipze:hover h1 .onhover{
+    display:inline;
+}
+.ipze:hover .ipzehead{
+    margin-right:1vw;
+    line-height: 1.2vw;
+    font-weight: 600;
+    display:inline-block;
+    width:80%;
+}
+.ipze:hover .ipzeinfo{
+    margin-top:0vw;
+    margin-right:1vw;
+    line-height: 1vw;
+    font-size: 0.75vw;
+    font-weight: 600;
+    display:inline-block;
+    width:80%;
+}
 
 .tzte {
      grid-area: 1 / 6 / 8 / 9;
+     background-image:url("https://i.pinimg.com/originals/f9/11/d3/f911d38579709636499618b6b3d9b6f6.jpg");
+     background-size:0vw;
+}
+.tzte h1{
+    margin-left: 12vw; 
+    margin-top: 1vw; 
+    writing-mode:vertical-rl;
+}
+ .tzte:hover h1{
+    margin-top: 1vw; 
+    margin-left:1vw;
+ }
+ .tzte:hover{
+    background-image: url(pics/tztebackground.png);
+    background-size:cover;
+    color: #1C3964;
+    transition: all 0.4s ease-in-out;
+}
+.tzte h1 .onhover{
+    display:none;
+}
+.tzte:hover h1 .notonhover{
+    display:none;
+}
+.tzte:hover h1 .onhover{
+    display:inline;
+}
+.tzte .onhover{
+    display:none;
+}
+.tzte:hover .tztehead{
+    margin-top:-6.7vw;
+    margin-left:4vw;
+    line-height: 1.2vw;
+    font-weight: 600;
+    display:inline-block;
+    width:80%;
+    color:black;
+}
+.tzte:hover .tzteinfo{
+    margin-top:-4vw;
+    margin-left:4vw;
+    line-height: 1vw;
+    font-size: 0.75vw;
+    font-weight: 600;
+    display:inline-block;
+    width:80%;
+    color:black;
 }
 
-
-.ae { grid-area: 1 / 9 / 4 / 15; }
-
+.ae { 
+    grid-area: 1 / 9 / 4 / 15;
+    background-image:url("https://i.pinimg.com/originals/f9/11/d3/f911d38579709636499618b6b3d9b6f6.jpg");
+    background-size:0vw;
+    transition: all 0.4s ease-in-out;
+ }
 .ae h1{
     margin-top:10vw; 
     text-indent: 1vw;
 }
+.ae .onhover{
+    display:none;
+}
+.ae:hover{
+    background-image: url("pics/aebackground.png");
+    background-size:cover;
+   color: white;
+}
+.ae:hover h1{
+    margin-top: 7.5vw; 
+    text-indent: 1vw;
+ }
 
-.tae { grid-area: 4 / 9 / 8 / 15; }
+.ae:hover h1 .notonhover{
+    display:none;
+}
+.ae:hover h1 .onhover{
+    display:inline;
+}
 
-.aep { grid-area: 1 / 15 / 8 / 18; }
+.ae:hover .aehead{
+    margin-left:1vw;
+    line-height: 0vw;
+    font-weight: 600;
+    display:inline-block;
+    width:80%;
+}
+.ae:hover .aeinfo{
+    margin-left:1vw;
+    line-height: 1vw;
+    font-size: 0.75vw;
+    font-weight: 600;
+    display:inline-block;
+    width:80%;
+}
+
+.tae { 
+    grid-area: 4 / 9 / 8 / 15;
+    background-image:url("https://i.pinimg.com/originals/f9/11/d3/f911d38579709636499618b6b3d9b6f6.jpg");
+ 
+ }
+
+.tae:hover{
+    background-image: url(pics/taebackground.png);
+    color:white;
+    transition: all 0.4s ease-in-out;
+}
+.tae:hover h1 .notonhover{
+    display:none;
+}
+.tae .onhover{
+    display:none;
+}
+.tae:hover .onhover{
+    display:inline;
+}
+.tae:hover .taehead{
+    width:60%;
+    margin-left:1vw;
+    line-height: 1vw;
+    font-weight: 600;
+    display:inline-block;
+}
+
+.aep { 
+    grid-area: 1 / 15 / 8 / 18; 
+    background-image:url("https://i.pinimg.com/originals/f9/11/d3/f911d38579709636499618b6b3d9b6f6.jpg");
+    background-size:0vw;
+}
 
 
 .aep h1{
     margin-left: 1vw; 
-    margin-top: 25vw; 
+    margin-top: 24vw; 
     writing-mode:vertical-rl;
 }
 
+.aep:hover h1{
+    margin-top:24vw; 
+    margin-left:14vw;
+ }
+ .aep:hover{
+    background-image: url(pics/aepbackground.png);
+    background-size:cover;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+.aep .onhover{
+    display:none;
+}
+.aep:hover h1 .notonhover{
+    display:none;
+}
+.aep:hover h1 .onhover{
+    display:inline;
+}
+
+
+.aep:hover .aephead{
+    margin-top:-7vw;
+    margin-left:1vw;
+    line-height: 1.2vw;
+    font-weight: 600;
+    display:inline-block;
+    width:80%;
+}
+.aep:hover .aepinfo{
+    margin-top:-4vw;
+    margin-left:1vw;
+    line-height: 1vw;
+    font-size: 0.75vw;
+    font-weight: 600;
+    display:inline-block;
+    width:80%;
+}
 .news { grid-area: 8 / 1 / 15 / 3; }
 .news h1{
     margin-left: 8vw; 
@@ -511,6 +723,14 @@ html { font-family: 'Inter', sans-serif; }
  .inews div h1{
     padding-top:25vw;
  }
+ .inews div a{
+    color:white;
+    text-decoration-line: none;
+    transition: all 0.2s ease-in-out;
+ }
+ .inews:hover div a{
+    color:#FFD600;
+ }
 .lectures { 
     grid-area: 8 / 12 / 15 / 15;
     background-image: url('pics/auditorium.png');
@@ -522,6 +742,15 @@ html { font-family: 'Inter', sans-serif; }
 .lectures div h1{
     padding-top:25vw
 }
+
+.lectures div a{
+    color:white;
+    text-decoration-line: none;
+    transition: all 0.2s ease-in-out;
+ }
+ .lectures:hover div a{
+    color:#FFD600;
+ }
 .stud { 
     grid-area: 8 / 15 / 15 / 18;
     background-image: url('pics/students.png');
@@ -534,17 +763,31 @@ html { font-family: 'Inter', sans-serif; }
  .stud div h1{
     padding-top:25vw;
  }
+
+ .stud div a{
+    color:white;
+    text-decoration-line: none;
+    transition: all 0.2s ease-in-out;
+ }
+ .stud:hover div a{
+    color:#FFD600;
+ }
 .morenews { 
     grid-area: 14 / 15 / 15 / 18;
     text-align: center;
     padding: 1vw;
     background-color: white;
     margin-top:1vw;
+    transition: all 0.3s ease-in-out;
+ }
+ .morenews:hover{
+    color:white;
+    background-color: #FFD600;
  }
 }
 
 /*Newspage css*/
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
     .newswrap{
         width: 100%;
         height: 300vw;
@@ -613,7 +856,7 @@ html { font-family: 'Inter', sans-serif; }
      }
 }
 
-@media screen and (min-width:769px){
+@media screen and (min-width:768px){
 .newswrap{
     width: 100%;
     height: 65vw;
@@ -623,6 +866,10 @@ html { font-family: 'Inter', sans-serif; }
     font-weight: 800;
     text-align: right;
     color:white;
+}
+
+.newswrap div:hover a{
+    color:#FFD600
 }
 .newshead { 
     grid-area: 1 / 1 / 3 / 2;
@@ -700,7 +947,7 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 /*Science css*/
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
    
 .sciencewrap {
     width:100%;
@@ -711,6 +958,9 @@ html { font-family: 'Inter', sans-serif; }
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     color:#1C3964;
+}
+.sciencewrap div a{
+    text-decoration-line:underline;
 }
 .sciencehead { 
     grid-area: 1 / 1 / 2 / 3;
@@ -757,7 +1007,7 @@ html { font-family: 'Inter', sans-serif; }
 
 
 }
-@media screen and (min-width:769px){
+@media screen and (min-width:768px){
 
 .sciencewrap {
     width: 100%;
@@ -768,6 +1018,9 @@ html { font-family: 'Inter', sans-serif; }
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     color:#1C3964;
+}
+.sciencewrap div a{
+    text-decoration-line:underline;
 }
 .sciencehead { 
     grid-area: 1 / 1 / 2 / 4;
@@ -802,7 +1055,7 @@ html { font-family: 'Inter', sans-serif; }
 
 
 /*Scienceawards css*/
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
     .scienceawardswrap {
         width: 100%;
         height: 230vw;
@@ -847,7 +1100,7 @@ html { font-family: 'Inter', sans-serif; }
     }
     
 }
-@media screen and (min-width:769px){
+@media screen and (min-width:768px){
     .scienceawardswrap {
         width: 100%;
         height: 33vw;
@@ -891,7 +1144,7 @@ html { font-family: 'Inter', sans-serif; }
 
 /*Conferences css*/
 
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
     .conferenceswrap{
         width: 100%;
         height: 260vw;
@@ -922,7 +1175,7 @@ html { font-family: 'Inter', sans-serif; }
 
     
 }
-@media screen and (min-width:769px){
+@media screen and (min-width:768px){
     .conferenceswrap{
         width: 100%;
         height: 64vw;
@@ -935,6 +1188,9 @@ html { font-family: 'Inter', sans-serif; }
     }
     .conferenceswrap div div .highfont{
         line-height:1vw; width:20vw;
+    }
+    .conferenceswrap div div:hover .highfont{
+        color:#FFD600
     }
     .conferenceswrap div div p{
         line-height:1vw;
@@ -956,7 +1212,7 @@ html { font-family: 'Inter', sans-serif; }
 }   
 
     /*Internationaloffice css*/
-    @media screen and (max-width:768px){
+    @media screen and (max-width:767px){
         .internationalofficewrap {
             width: 100%;
             height: 160vw;
@@ -966,6 +1222,10 @@ html { font-family: 'Inter', sans-serif; }
             grid-column-gap: 0px;
             grid-row-gap: 0px;
             color:#1C3964;
+        }
+
+        .internationalofficewrap div a{
+            text-decoration-line:underline;
         }
 
         .internationalofficehead { grid-area: 1 / 1 / 2 / 3; }
@@ -988,7 +1248,7 @@ html { font-family: 'Inter', sans-serif; }
             
          }
     }
-    @media screen and (min-width:769px){
+    @media screen and (min-width:768px){
         .internationalofficewrap {
             width: 100%;
             height: 33vw;
@@ -1000,6 +1260,10 @@ html { font-family: 'Inter', sans-serif; }
             color:#1C3964;
         }
 
+
+        .internationalofficewrap div a{
+            text-decoration-line:underline;
+        }
         .internationalofficehead { grid-area: 1 / 1 / 2 / 4; }
         .internationalofficehead p{
             margin-top:5vw; 
@@ -1018,7 +1282,7 @@ html { font-family: 'Inter', sans-serif; }
 
 
 /*Entry css*/
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
 
     .entrywrap {
         width: 100%;
@@ -1136,7 +1400,7 @@ html { font-family: 'Inter', sans-serif; }
     }
 }
 
-@media screen and (min-width:769px){
+@media screen and (min-width:768px){
 
     .entrywrap {
         width: 100%;
@@ -1331,7 +1595,7 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 /*Superheroes css*/
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
     .superheroeswrap {
         width: 100%;
         height: 400vw;
@@ -1508,7 +1772,7 @@ html { font-family: 'Inter', sans-serif; }
     }
 
 }
-@media screen and (min-width:769px){
+@media screen and (min-width:768px){
 
     .superheroeswrap {
         width: 100%;
@@ -1677,16 +1941,21 @@ html { font-family: 'Inter', sans-serif; }
     
 }
 /*Phd css*/
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
     .phdwrap {
         width: 100%;
-        height: 180vw;
+        height: 200vw;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-rows: repeat(9, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         color:#1C3964;
+    }
+
+
+    .phdwrap div a{
+        text-decoration-line:underline;
     }
     .phdhead { grid-area: 1 / 1 / 2 / 2; }
     .phdhead p{
@@ -1695,13 +1964,13 @@ html { font-family: 'Inter', sans-serif; }
         line-height: 8vw;
         width:80%;
     }
-    .phdfiles { grid-area: 2 / 1 / 9 / 2; }
+    .phdfiles { grid-area: 2 / 1 / 10 / 2; }
     .phdfiles div p{
         margin-top:8vw;
         margin-left:4vw;
     }
 }
-@media screen and (min-width:769px){
+@media screen and (min-width:768px){
     .phdwrap {
         width: 100%;
         height: 35vw;
@@ -1711,6 +1980,9 @@ html { font-family: 'Inter', sans-serif; }
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         color:#1C3964;
+    }
+    .phdwrap div a{
+        text-decoration-line:underline;
     }
     .phdhead { grid-area: 1 / 1 / 2 / 6; }
     .phdhead p{
@@ -1737,7 +2009,7 @@ html { font-family: 'Inter', sans-serif; }
 /*Magistracy css*/
     
 
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
     .magistracywrap {
         width: 100%;
         height:700vw;
@@ -1838,7 +2110,7 @@ html { font-family: 'Inter', sans-serif; }
         margin-top:3vw;
     }
 }
-@media screen and (min-width:769px){
+@media screen and (min-width:768px){
     .magistracywrap {
         width: 100%;
         height: 80vw;
@@ -1959,7 +2231,7 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 /*Junior css*/
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
 
     .juniorwrap{
         display:grid;
@@ -2114,7 +2386,7 @@ html { font-family: 'Inter', sans-serif; }
     }
 }
 
-@media screen and (min-width:769px){
+@media screen and (min-width:768px){
 
     .juniorwrap{
         display:grid;
@@ -2269,7 +2541,7 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 /*Courses css*/
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
 
     .courseswrap{
         display:grid;
@@ -2395,7 +2667,7 @@ html { font-family: 'Inter', sans-serif; }
         border:none;
     }
 }
-@media screen and (min-width:769px){
+@media screen and (min-width:768px){
 
     .courseswrap{
         display:grid;
@@ -2537,7 +2809,7 @@ html { font-family: 'Inter', sans-serif; }
 
   
  /*Docs css*/
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
     .docswrap {
         width: 100%;
         height: 200vw;
@@ -2547,6 +2819,10 @@ html { font-family: 'Inter', sans-serif; }
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         color:#1C3964;
+    }
+
+    .docswrap div a{
+        text-decoration-line:underline;
     }
     .docshead { grid-area: 1 / 1 / 2 / 2; }
     .docshead p{
@@ -2564,7 +2840,7 @@ html { font-family: 'Inter', sans-serif; }
         margin-top: -3vw;
     }
 }
-@media screen and (min-width:769px){
+@media screen and (min-width:768px){
     .docswrap {
         width: 100%;
         height: 35vw;
@@ -2574,6 +2850,9 @@ html { font-family: 'Inter', sans-serif; }
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         color:#1C3964;
+    }
+    .docswrap div a{
+        text-decoration-line:underline;
     }
      .docshead { grid-area: 1 / 1 / 2 / 6; }
      .docshead p{
@@ -2614,10 +2893,10 @@ html { font-family: 'Inter', sans-serif; }
 
 
 /*Facultyinfo css*/
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
     .facultyinfowrap{
         width: 100%;
-        height: 600vw;
+        height: 630vw;
         display: grid;
         grid-template-rows: repeat(26, 1fr);
         grid-template-columns: repeat(1, 1fr);
@@ -2652,12 +2931,49 @@ html { font-family: 'Inter', sans-serif; }
         text-align: right;
     }
     .facultyinfolinks div p{
-        margin-right:15vw;  
-        margin-top:45vw; 
+        margin-right:10vw;  
+        margin-top:50vw; 
         line-height: 7vw;
     }
     .facultyinfocompanies{
         grid-area: 21 / 1 / 26 / 2;
+    }
+
+    .facultyinfocompanieswrap .pic1{
+        height:12vw;
+        margin:0vw;
+    }
+    .facultyinfocompanieswrap .pic2{
+        
+        height:12vw;
+    }
+    .facultyinfocompanieswrap .pic3{
+        
+        height:8vw;
+    }
+    .facultyinfocompanieswrap .pic4{
+        
+        height:14vw;
+    }
+    .facultyinfocompanieswrap .pic5{
+        height:6vw;
+    }
+    .facultyinfocompanieswrap .pic6{
+        height:14vw;
+    }
+    .facultyinfocompanieswrap .pic7{
+        height:10vw;
+        margin-top:1vw;
+    }
+    .facultyinfocompanieswrap .pic8{
+        height:14vw;
+    }
+    .facultyinfocompanieswrap .pic9{
+        height:6vw;
+        margin-top:1vw;
+    }
+    .facultyinfocompanieswrap .pic10{
+        height:12vw;
     }
     .facultyinfocompanies p{
         color: #FFD600; 
@@ -2676,7 +2992,7 @@ html { font-family: 'Inter', sans-serif; }
         margin-left: 10vw;
     }
 }
-@media screen and (min-width:769px){
+@media screen and (min-width:768px){
     .facultyinfowrap{
         width: 100%;
         height: 67vw;
@@ -2717,34 +3033,42 @@ html { font-family: 'Inter', sans-serif; }
     }
 
     .facultyinfocompanieswrap .pic1{
+        height:2vw;
         margin:0vw;
     }
     .facultyinfocompanieswrap .pic2{
-        height:1.8vw;margin-left:-1.5vw;
+        height:2vw;
     }
     .facultyinfocompanieswrap .pic3{
-        height:1.8vw;margin-left:-2vw;
+        height:1.8vw;
     }
     .facultyinfocompanieswrap .pic4{
-        margin-left:-2.5vw;
+        margin-left:1vw;
+        height:2.3vw;
     }
     .facultyinfocompanieswrap .pic5{
-        margin-left:-4vw;
+        height: 1.8vw;
+        margin-right:2vw;
     }
     .facultyinfocompanieswrap .pic6{
+        height:3.2vw;
         margin: 0vw;
     }
     .facultyinfocompanieswrap .pic7{
+        height:2vw;
         margin-left:-2vw; margin-top:1vw;
     }
     .facultyinfocompanieswrap .pic8{
-        margin-left:-2.5vw;
+        height:2.2vw;
+        margin-top:1vw;
     }
     .facultyinfocompanieswrap .pic9{
-        margin-left:-3vw; margin-top:1vw;
+        height:1.2vw;
+        margin-top:1.7vw;
     }
     .facultyinfocompanieswrap .pic10{
-        margin-left:-3.5vw;
+        height:3vw;
+        margin-top:1vw;
     }
     .facultyinfovideo{
         grid-area: 1 / 10 / 8 / 21;
@@ -2775,7 +3099,7 @@ html { font-family: 'Inter', sans-serif; }
     }
 }
 /*History css*/
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
 
     .historywrap{
         width: 100%;
@@ -2831,7 +3155,7 @@ html { font-family: 'Inter', sans-serif; }
     
 }
 
-@media screen and (min-width:769px){
+@media screen and (min-width:768px){
 
     .historywrap{
         width: 100%;
@@ -2911,7 +3235,6 @@ html { font-family: 'Inter', sans-serif; }
     border: 0.05vw solid #1C3964;
 }
 
-
 .dropdown:hover .dropdown-content {
     display: block;
     z-index: 10;
@@ -2931,7 +3254,7 @@ html { font-family: 'Inter', sans-serif; }
     transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
     .dropdown {
         display: inline-block;
         position: relative;
@@ -2971,13 +3294,13 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 /*Hamburger menu css*/
-@media screen and (min-width:769px){
+@media screen and (min-width:768px){
     .hamburgermenu{
         display:none;
     }
 }
 
-@media screen and (max-width:768px){    
+@media screen and (max-width:767px){    
       
       .hamburgermenu{
         grid-area: 2 /4 / 4 /5;
@@ -3094,7 +3417,7 @@ html { font-family: 'Inter', sans-serif; }
 
 
 /*Fonts and some other components css*/
-@media screen and (min-width:769px){
+@media screen and (min-width:768px){
 
     .highfont{
         font-style: normal;
@@ -3112,7 +3435,7 @@ html { font-family: 'Inter', sans-serif; }
         font-size: 1vw;
     }
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
     .highfont{
         font-style: normal;
         font-weight: 800;
@@ -3150,4 +3473,13 @@ transform:  rotate(180deg);
 
 p{
     margin-top: 1vw;
+}
+
+a:link, a:visited {
+    color: inherit;
+    text-decoration-line: none;
+    transition: all 0.2s ease-in-out;
+}
+a:hover{
+    color:#FFD600
 }
