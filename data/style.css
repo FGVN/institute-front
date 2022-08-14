@@ -208,7 +208,7 @@ html { font-family: 'Inter', sans-serif; }
         display:grid;
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(1, 1fr);
-        height:250vw;
+        height:300vw;
     }
     .contacts{
         grid-area: 3 / 1 / 4 / 2;
@@ -244,8 +244,12 @@ html { font-family: 'Inter', sans-serif; }
     }
     .links{
         grid-area: 1 / 1 / 2 / 2;
-        margin-top: 5vw;
+        margin-top: 20vw;
         font-weight: 600;
+    }
+    .links p{
+        margin-top:10vw;
+
     }
     .kpi{
         grid-area: 2 / 1 / 3 / 2;
@@ -366,7 +370,7 @@ html { font-family: 'Inter', sans-serif; }
 @media screen and (max-width:767px){
     .homepagecontentwrap{
         width: 100%;
-        height: 380vw;
+        height: 370vw;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(53, 1fr);
@@ -482,14 +486,19 @@ html { font-family: 'Inter', sans-serif; }
     grid-template-rows: repeat(14, 1fr);
     font-weight: 800;
     color:#1C3964;
+    overflow: hidden;
+}
+.homepagecontentwrap div{
+
+    background-size: 100% 100%;
+    background-position: center center;
+    transition-duration: 0.4s;
 }
 .homepagecontentwrap div:hover{
-
-    -webkit-transform: scale(1.1);
-    transform: scale(1.05);
-    -webkit-transition: all 0.8s;
-    transition: all 0.8s;
-    opacity:1;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    background-size: 110% 110%;
+    cursor: pointer;
 }
 .homepagecontentwrap div h1 img{
     height: 2vw;
@@ -731,6 +740,7 @@ html { font-family: 'Inter', sans-serif; }
 .inews { 
     grid-area: 8 / 3 / 15 / 12;
     background-image: url('pics/prometheus.png');
+    background-color: rgba(0,0,0,0.25);
     background-repeat: no-repeat;
     background-size: cover;
     text-align:right;
@@ -883,14 +893,24 @@ html { font-family: 'Inter', sans-serif; }
     text-align: right;
     color:white;
 }
+.newscontentwrap div{
 
+    background-size: 100% 100%;
+    background-position: center center;
+    transition-duration: 0.4s;
+}
+
+.newswrap div{
+
+    background-size: 100% 100%;
+    background-position: center center;
+    transition-duration: 0.4s;
+}
 .newswrap div:hover{
-
-    -webkit-transform: scale(1.1);
-    transform: scale(1.05);
-    -webkit-transition: all 0.8s;
-    transition: all 0.8s;
-    opacity:1;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    background-size: 110% 110%;
+    cursor: pointer;
 }
 
 .newswrap div:hover a{
@@ -904,7 +924,6 @@ html { font-family: 'Inter', sans-serif; }
 .nlectures { 
     grid-area: 3 / 1 / 8 / 2;
     background-image: url("pics/auditorium.png");
-    background-size: cover;
  }
  .nlectures h1{
     padding-top:16vw;
@@ -912,7 +931,6 @@ html { font-family: 'Inter', sans-serif; }
 .facultynews { 
     grid-area: 1 / 2 / 8 / 3;
     background-image: url("pics/students.png");
-    background-size: cover;
  }
  .facultynews h1{
     padding-top:22vw;
@@ -924,7 +942,6 @@ html { font-family: 'Inter', sans-serif; }
 .library { 
     grid-area: 1 / 3 / 8 / 4;
     background-image: url("pics/library.png");
-    background-size: cover;
  }
  .library h1{
     padding-top:25vw;
@@ -932,7 +949,6 @@ html { font-family: 'Inter', sans-serif; }
 .events { 
     grid-area: 1 / 4 / 8 / 5;
     background-image: url("pics/student.png");
-    background-size: cover;
  }
  .events h1{
     padding-top:25vw;
@@ -940,7 +956,6 @@ html { font-family: 'Inter', sans-serif; }
 .learning { 
     grid-area: 8 / 1 / 15 / 2;
     background-image: url("pics/books.png");
-    background-size: cover;
  }
  .learning h1{
     padding-top:25vw;
@@ -948,7 +963,6 @@ html { font-family: 'Inter', sans-serif; }
 .faculty { 
     grid-area: 8 / 2 / 15 / 3;
     background-image: url("pics/learning.png");
-    background-size: cover;
  }
  .faculty h1{
     padding-top:25vw;
@@ -964,7 +978,6 @@ html { font-family: 'Inter', sans-serif; }
 .fridayevents { 
     grid-area: 8 / 4 / 15 / 5;
     background-image: url("pics/culture\ palace.png");
-    background-size: cover;
  }
  .fridayevents h1{
     padding-top:25vw;
@@ -1214,12 +1227,17 @@ html { font-family: 'Inter', sans-serif; }
     .conferenceswrap div div .highfont{
         line-height:1vw; width:20vw;
     }
-    .conferencesnews:hover{
-        -webkit-transform: scale(1.1);
-        transform: scale(1.05);
-        -webkit-transition: all 0.8s;
-        transition: all 0.8s;
-        opacity:1;
+    .conferenceswrap div{
+
+        background-size: 100% 100%;
+        background-position: center center;
+        transition-duration: 0.4s;
+    }
+    .conferenceswrap div:hover{
+        -webkit-transition: all 0.4s;
+        transition: all 0.4s;
+        background-size: 110% 110%;
+        cursor: pointer;
     }
     .conferencesnews:hover a{
         color:#FFD600;
@@ -2031,6 +2049,9 @@ html { font-family: 'Inter', sans-serif; }
     .phdfiles div p{
         margin-top:-0.3vw;
     }
+    .phdfiles div{
+        padding:4vw;
+    }
 
     .phdnews { 
         color:white;
@@ -2039,13 +2060,17 @@ html { font-family: 'Inter', sans-serif; }
         background-image: url('pics/auditorium.png');
         background-size: cover;
      }
-     .phdnews:hover{
-         -webkit-transform: scale(1.1);
-         transform: scale(1.05);
-         -webkit-transition: all 0.8s;
-         transition: all 0.8s;
-         opacity:1;
-     }
+     .phdnews{
+        background-size: 100% 100%;
+        background-position: center center;
+        transition-duration: 0.4s;
+    }
+    .phdnews:hover{
+        -webkit-transition: all 0.4s;
+        transition: all 0.4s;
+        background-size: 110% 110%;
+        cursor: pointer;
+    }
      .phdnews:hover a{
         color:#FFD600;
         transition: all 0.3s ease-in-out;
@@ -2936,13 +2961,17 @@ html { font-family: 'Inter', sans-serif; }
          background-image: url('pics/auditorium.png');
          background-size: cover;
       }
+      .docsnews{
 
-     .docsnews:hover{
-        -webkit-transform: scale(1.1);
-        transform: scale(1.05);
-        -webkit-transition: all 0.8s;
-        transition: all 0.8s;
-        opacity:1;
+        background-size: 100% 100%;
+        background-position: center center;
+        transition-duration: 0.4s;
+    }
+    .docsnews:hover{
+        -webkit-transition: all 0.4s;
+        transition: all 0.4s;
+        background-size: 110% 110%;
+        cursor: pointer;
     }
     .docsnews:hover a{
        color:#FFD600;
@@ -3151,13 +3180,16 @@ html { font-family: 'Inter', sans-serif; }
         color:white;
         text-align: right;
     }  
-
+    .facultyinfolinks div{
+        background-size: 100% 100%;
+        background-position: center center;
+        transition-duration: 0.4s;
+    }
     .facultyinfolinks div:hover{
-        -webkit-transform: scale(1.1);
-        transform: scale(1.05);
-        -webkit-transition: all 0.8s;
-        transition: all 0.8s;
-        opacity:1;
+        -webkit-transition: all 0.4s;
+        transition: all 0.4s;
+        background-size: 110% 110%;
+        cursor: pointer;
     }
     .facultyinfolinks div p{
         margin-right:2vw;  
@@ -3272,6 +3304,7 @@ html { font-family: 'Inter', sans-serif; }
         color: white;
         text-align: right;
         background-image: url(pics/auditorium.png);
+        background-size: cover;
     }
     .historylectures h1{
         margin-top:25vw; 
@@ -3282,12 +3315,17 @@ html { font-family: 'Inter', sans-serif; }
         margin-right: 1vw;
     }
 
+    .historylectures{
+
+        background-size: 100% 100%;
+        background-position: center center;
+        transition-duration: 0.4s;
+    }
     .historylectures:hover{
-        -webkit-transform: scale(1.1);
-        transform: scale(1.05);
-        -webkit-transition: all 0.8s;
-        transition: all 0.8s;
-        opacity:1;
+        -webkit-transition: all 0.4s;
+        transition: all 0.4s;
+        background-size: 110% 110%;
+        cursor: pointer;
     }
     .historylectures:hover a{
        color:#FFD600;
