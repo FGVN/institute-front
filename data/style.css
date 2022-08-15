@@ -868,15 +868,14 @@ html { font-family: 'Inter', sans-serif; }
         margin-right: 2vw;
     }
     .newswrap div .highfont{
-        font-size:4vw;
-        line-height: 4vw;
+        font-size:5vw;
+        line-height: 5vw;
     }
     .newshead { 
         grid-area: 1 / 1 / 2 / 3;
         color:#1C3964;
         text-align: left;
      }
-     
     .nlectures { 
         grid-area: 2 / 1 / 6 / 2;
         background-image: url("pics/auditorium.png");
@@ -1306,10 +1305,10 @@ html { font-family: 'Inter', sans-serif; }
     @media screen and (max-width:767px){
         .internationalofficewrap {
             width: 100%;
-            height: 160vw;
+            height: 200vw;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(6, 1fr);
+            grid-template-rows: repeat(8, 1fr);
             grid-column-gap: 0px;
             grid-row-gap: 0px;
             color:#1C3964;
@@ -1328,14 +1327,14 @@ html { font-family: 'Inter', sans-serif; }
         .internationalofficevideo { grid-area: 2 / 1 / 4 / 3; }
 
         .internationalofficelinks{ 
-            grid-area: 4 / 1 / 7 / 3;
+            grid-area: 4 / 1 / 9 / 3;
             display:grid;
          }
          .internationalofficelinks div{
             text-align:center;
          }
          .internationalofficelinks p{
-            margin-top:9vw;
+            margin-top:17vw;
             
          }
     }
