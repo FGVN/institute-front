@@ -83,14 +83,18 @@ html { font-family: 'Inter', sans-serif; }
         grid-area: 1 / 1 / 2 / 3;
         text-align: right;
     }
+    .navphone p{
+        padding:1vw;
+        margin-top:3vw;
+    }
     .navschedule{
         grid-area: 2 / 1 / 3 / 3;
         text-align: right;
     }
 
     .navschedule p {
-        margin-right:5vw;
-        margin-top:5vw;
+        padding:1vw;
+        margin-top:3vw;
     }
     .navsearch{
         display:none;
@@ -208,7 +212,7 @@ html { font-family: 'Inter', sans-serif; }
         display:grid;
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(1, 1fr);
-        height:300vw;
+        height:270vw;
     }
     .contacts{
         grid-area: 3 / 1 / 4 / 2;
@@ -216,7 +220,7 @@ html { font-family: 'Inter', sans-serif; }
         color: #1C3964;
         width: 100%;
         margin-left:5vw;
-        margin-top:5vw; 
+        margin-top:-30vw; 
         font-weight: 600;
         display:grid;
         grid-template-rows: (5, 1fr);
@@ -224,10 +228,11 @@ html { font-family: 'Inter', sans-serif; }
     .contacts img{
         margin-top:10vw;
         margin-left:47vw;
-        height: 7vw;
+        height: 6vw;
     }
-    .contacts p{
-        width:80%;
+    .contacts a p{
+        width:40%;
+        margin-left:30vw;
         text-align: center;
         line-height: 3vw;
     }
@@ -236,11 +241,23 @@ html { font-family: 'Inter', sans-serif; }
         grid-area: 1 / 1 / 2 / 2;
         grid-template-columns: repeat(4, 1fr);
         margin-left:10vw;
+        margin-top:-10vw;
+        padding-bottom: 10vw;
     }
     .contacts .socials img{
-        margin-left:-3vw;
+        margin-left:0vw;
         height: 9vw;
         grid-area: auto;
+        margin-right: -5vw;
+    }
+    .contacts a{
+        margin-top:-5vw;
+    }
+    .footerstudrada {
+        width: 90%;
+        text-align: center;
+        margin-right: 10vw;
+        margin-top:-10vw;
     }
     .links{
         grid-area: 1 / 1 / 2 / 2;
@@ -249,34 +266,43 @@ html { font-family: 'Inter', sans-serif; }
     }
     .links p{
         margin-top:10vw;
+        font-weight:500;
 
     }
     .kpi{
         grid-area: 2 / 1 / 3 / 2;
-        margin-top:5vw;
+        margin-top:10vw;
         font-weight: 600;
-        margin-right:5vw;
-
+        margin-right:10vw;
+        height: 30vw;
     } 
     .kpi p{
+        font-weight: 500;
         margin-left:10vw;
-        line-height:3vw;
-        font-size: 3vw;
+        margin-top:2vw;
+        line-height:4vw;
+        font-size: 3.2vw;
         height: 100%;
-        width: 60%;
+        width: 100%;
     }
     .kpi img{
-        height: 20vw;
+        height: 22vw;
+        margin-right:-5vw;
     }
     .kpi .highfont{
-        margin-top:-10vw;
-        font-size: 5vw;
-        margin-left:30vw;
+        margin-top:2vw;
+        font-weight: 800;
+        font-size: 7vw;
+        margin-left:20vw;
     }
     .credits{
+        margin-top:-12vw;
+        width:80%;
+        margin-left:15vw;
         text-align: center;
         color:#1C3964;
         font-weight: 500;
+        height:30%;
     }
     .inline {
         display: inline-block;
@@ -326,6 +352,15 @@ html { font-family: 'Inter', sans-serif; }
 }
   .contacts .socials img{
       height: 2.6vw;
+  }
+  .footertelegram{
+    margin-left:2.5vw;
+  }
+  .footerinstagram{
+    margin-left:3vw;
+  }
+  .footertwitter{
+    margin-left:3vw;
   }
   .contacts p{
     width:20vw;
@@ -825,14 +860,16 @@ html { font-family: 'Inter', sans-serif; }
         color:white;
     }
     .newswrap div h1{
-        margin-top:42vw;
+        margin-top:47vw;
         margin-right:2vw;
     }
     .newswrap div p{
+        font-size:3.2vw;
         margin-right: 2vw;
     }
     .newswrap div .highfont{
         font-size:4vw;
+        line-height: 4vw;
     }
     .newshead { 
         grid-area: 1 / 1 / 2 / 3;
@@ -926,14 +963,14 @@ html { font-family: 'Inter', sans-serif; }
     background-image: url("pics/auditorium.png");
  }
  .nlectures h1{
-    padding-top:16vw;
+    padding-top:15vw;
  }
 .facultynews { 
     grid-area: 1 / 2 / 8 / 3;
     background-image: url("pics/students.png");
  }
  .facultynews h1{
-    padding-top:22vw;
+    padding-top:21vw;
     line-height: 2vw; 
     width:60%; 
     text-align: right; 
@@ -944,28 +981,28 @@ html { font-family: 'Inter', sans-serif; }
     background-image: url("pics/library.png");
  }
  .library h1{
-    padding-top:25vw;
+    padding-top:24vw;
  }
 .events { 
     grid-area: 1 / 4 / 8 / 5;
     background-image: url("pics/student.png");
  }
  .events h1{
-    padding-top:25vw;
+    padding-top:24vw;
  }
 .learning { 
     grid-area: 8 / 1 / 15 / 2;
     background-image: url("pics/books.png");
  }
  .learning h1{
-    padding-top:25vw;
+    padding-top:24vw;
  }
 .faculty { 
     grid-area: 8 / 2 / 15 / 3;
     background-image: url("pics/learning.png");
  }
  .faculty h1{
-    padding-top:25vw;
+    padding-top:24vw;
  }
 .studrad { 
     grid-area: 8 / 3 / 15 / 4;
@@ -973,14 +1010,14 @@ html { font-family: 'Inter', sans-serif; }
     background-size: cover;
  }
  .studrad h1{
-    padding-top:25vw;
+    padding-top:24vw;
  }
 .fridayevents { 
     grid-area: 8 / 4 / 15 / 5;
     background-image: url("pics/culture\ palace.png");
  }
  .fridayevents h1{
-    padding-top:25vw;
+    padding-top:24vw;
  }
 }
 
