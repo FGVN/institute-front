@@ -219,7 +219,6 @@ html { font-family: 'Inter', sans-serif; }
         grid-area: auto;
         color: #1C3964;
         width: 100%;
-        margin-left:5vw;
         margin-top:-30vw; 
         font-weight: 600;
         display:grid;
@@ -229,6 +228,9 @@ html { font-family: 'Inter', sans-serif; }
         margin-top:10vw;
         margin-left:47vw;
         height: 6vw;
+    }
+    .contacts a{
+        margin-top:-5vw;
     }
     .contacts a p{
         width:40%;
@@ -240,7 +242,7 @@ html { font-family: 'Inter', sans-serif; }
         display:grid;
         grid-area: 1 / 1 / 2 / 2;
         grid-template-columns: repeat(4, 1fr);
-        margin-left:10vw;
+        margin-left:15vw;
         margin-top:-10vw;
         padding-bottom: 10vw;
     }
@@ -249,9 +251,6 @@ html { font-family: 'Inter', sans-serif; }
         height: 9vw;
         grid-area: auto;
         margin-right: -5vw;
-    }
-    .contacts a{
-        margin-top:-5vw;
     }
     .footerstudrada {
         width: 90%;
@@ -287,7 +286,7 @@ html { font-family: 'Inter', sans-serif; }
     }
     .kpi img{
         height: 22vw;
-        margin-right:-5vw;
+        margin-right:-1vw;
     }
     .kpi .highfont{
         margin-top:2vw;
@@ -298,11 +297,11 @@ html { font-family: 'Inter', sans-serif; }
     .credits{
         margin-top:-12vw;
         width:80%;
-        margin-left:15vw;
+        margin-left:10vw;
         text-align: center;
         color:#1C3964;
         font-weight: 500;
-        height:30%;
+        height:22%;
     }
     .inline {
         display: inline-block;
