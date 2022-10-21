@@ -4,17 +4,162 @@
     <title>ННІАТЕ</title>
     <meta name="description" content="ННІАТЕ">
 </head>
-<script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
+
+<header>
+    <div class = "headerwrap border">
+        <div class="topmenuwrap">
+
+            <div class="navphone border">
+                <p><a href="tel:+0000000000" >+0000000000</a></p>
+            </div>
+            <div class="navsearch border">
+                <form class=" inline" style="margin-right:1vw; margin-top:1vw;">
+                    <input type='text' id='userInput' name='userInput' class="lowfont" placeholder='Пошук'>
+                    <input type="image" name="submit" src="data/pics/search.jpg" alt="Submit" style="height:1.2vw;" />                
+                </form>
+            </div>
+            <div class="navschedule border">
+                <p style="margin-right:1vw;">Розклад занять</p>
+            </div>
+
+        </div>
+        <div class="navtop border uppercase">
+            <p>Навчально-науковий інститут атомної та теплової енергетики</p>
+        </div>
+
+        <div class="navlogo border">
+                <a href="index.html">
+                    <img src="data/pics/logo.png">
+                </a>
+        </div>
+        <div class="hamburgermenu border">
+            <input id="toggle" type="checkbox"></input>
+
+            <label for="toggle" class="hamburger">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+            </label>
+
+            <div class="nav scrolling">
+                <div class="nav-wrapper">
+                    <nav>
+                        <div>
+                            <p><a href="index.html" style="font-size:7vw;">Головна</a></p>
+                        </div>
+                        <div class="dropdown">
+                            <p>Факультет</p>
+                            <div class="dropdown-content">
+                                <a rel="noopener" href="facultyinfo.html">Про факультет</a>
+                                <a rel="noopener" href="history.html">Історія</a>
+                                <a rel="noopener" href="index.html">Кафедри</a>
+                                <a rel="noopener" href="info.html">Інформаційний пакет</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <p>Вступ</p>
+                            <div class="dropdown-content">
+                                <a rel="noopener" href="entry.html">Вступ на 1 курс (за сертифікатами ЗНО) </a>
+                                <a rel="noopener" href="juniorentry.html"> Вступ за дипломом молодшого спеціаліста / фахового молодшого бакалавра</a>
+                                <a rel="noopener" href="magistracy.html">Вступ до магістратури</a>
+                                <a rel="noopener" href="phd.html">Вступ до аспірантури за програмою підготовки PhD</a>
+                                <a rel="noopener" href="courses.html">Підготовчі курси</a>
+                                <a rel="noopener" href="docs.html">Офіційні документи та корисні посилання</a>
+                                <a rel="noopener" href="superheroes.html">Супергерої</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <p>Студентам</p>
+                            <div class="dropdown-content">
+                                <a rel="noopener" href="catalogue.html">Каталоги дисциплін</a>
+                                <a rel="noopener" href="session.html">Сесія</a>
+                                <a rel="noopener" href="ratings.html">Рейтинг та стипендія</a>
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                <a rel="noopener" href="conferences.html" style="font-size:7vw;">Конференції</a>
+                            </p> 
+                        </div>  
+                        <div>
+                            <p style="width:110%;">
+                                <a rel="noopener" href="internationaloffice.html" style="font-size:7vw;">Міжнародний офіс</a>
+                            </p>
+                        </div>
+            
+                        <div class="dropdown">
+                            <p>Наука</p>
+                            <div class="dropdown-content">
+                                <a rel="noopener" href="science.html">Наука</a>
+                                <a rel="noopener" href="scienceawards.html">Наукові досягнення</a>
+                            </div>
+                        </div>
+                        <div>
+                            <p><a href="news.html" style="font-size:7vw;">Новини</a></p>
+
+                        </div>
+                        <div>
+                            <p>Контакти</p>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+            
+        <div class="navmenu border">
+                <p style="margin-top:2vw;"><a href="index.html">Головна</a></p>
+                <div class="dropdown">
+                    <p style="margin-top:2vw;">Факультет</p>
+                    <div class="dropdown-content">
+                        <a rel="noopener" href="facultyinfo.html">Про факультет</a>
+                        <a rel="noopener" href="history.html">Історія</a>
+                        <a rel="noopener" href="index.html">Кафедри</a>
+                        <a rel="noopener" href="info.html">Інформаційний пакет</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <p style="margin-top:2vw;">Вступ</p>
+                    <div class="dropdown-content">
+                        <a rel="noopener" href="entry.html">Вступ на 1 курс (за сертифікатами ЗНО) </a>
+                        <a rel="noopener" href="juniorentry.html"> Вступ за дипломом молодшого спеціаліста / фахового молодшого бакалавра</a>
+                        <a rel="noopener" href="magistracy.html">Вступ до магістратури</a>
+                        <a rel="noopener" href="phd.html">Вступ до аспірантури за програмою підготовки PhD</a>
+                        <a rel="noopener" href="courses.html">Підготовчі курси</a>
+                        <a rel="noopener" href="docs.html">Офіційні документи та корисні посилання</a>
+                        <a rel="noopener" href="superheroes.html">Супергерої</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <p style="margin-top:2vw;">Студентам</p>
+                    <div class="dropdown-content">
+                        <a rel="noopener" href="catalogue.html">Каталоги дисциплін</a>
+                        <a rel="noopener" href="session.html">Сесія</a>
+                        <a rel="noopener" href="ratings.html">Рейтинг та стипендія</a>
+                    </div>
+                </div>
+                <p style="margin-top:2vw;">
+                    <a rel="noopener" href="conferences.html">Конференції</a>
+                </p>   
+                <p style="margin-top:2vw; width:120%; margin-left:1vw;">
+                    <a rel="noopener" href="internationaloffice.html">Міжнародний офіс</a>
+                </p>
+    
+                <div class="dropdown">
+                    <p style="margin-top:2vw; margin-left: 5vw;">Наука</p>
+                    <div class="dropdown-content">
+                        <a rel="noopener" href="science.html">Наука</a>
+                        <a rel="noopener" href="scienceawards.html">Наукові досягнення</a>
+                    </div>
+                </div>
+                <p style="margin-top:2vw; margin-left:3vw;"><a href="news.html">Новини</a></p>
+                <p style="margin-top:2vw; margin-left:2vw;">Контакти</p>
+        </div>
+    </div>
+</header>
+<script>
+
 </script>
-<script> 
-$(function(){
-  $("#header").load("header.html"); 
-  $("#footer").load("footer.html"); 
-});
-</script> 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -116,4 +261,143 @@ $(function(){
         </div>
 </body>
 
-<div id="footer"></div>
+<footer>
+    <div class="footerwrap">
+        <div class="lowfont contacts"  >
+            <a href="tel:+0000000000" class="imgtextlink">
+                <img src="data/pics/phone.png">
+                <p class="inline"> 
+                    +0000000000
+                </p>
+            </a>
+            <br>
+            <a href="mailto:@gmail.com" class="imgtextlink">
+                <img src="data/pics/mail.png">
+                <p class="inline"> 
+                        @gmail.com
+                </p>
+            </a>
+            <br>
+            <a href="index.html" class="imgtextlink">
+                <img src="data/pics/location.png"> 
+                <p class="inline"> 
+                 Київ, метро Політехнічний іститут, 
+                  вулиця Політехнічна 6
+                </p>
+            </a>
+            <br>
+            <br>
+            <br>
+            <div class="footerstudrada">
+                    <p class="inline"> 
+                        Підписуйся на телеграм-канал<br> нашої студради: 
+                        <a href="index.html" style=" text-decoration-line: underline;">@t-me</a>
+                    </p>
+            </div>
+            <br>
+            <br>
+            <div class="socials">
+                <img class="footerfacebook" src="data/pics/facebook.png">  
+                <img src="data/pics/telegram.png" class="footertelegram">  
+                <img src="data/pics/instagram.png" class="footerinstagram"> 
+                <img src="data/pics/twitter.png" class="footertwitter">   
+            </div>
+        </div>
+        <div class="links">
+            <p class="inline"> 
+                <a href="index.html" style=" text-decoration-line: underline;">Лінк має бути довгим</a>
+                <span class="notonmobile">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+                <span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+                <a href="index.html" style=" text-decoration-line: underline;">Лінк має бути довгим</a>
+            </p>
+            <p class="inline"> 
+                <a href="index.html" style=" text-decoration-line: underline;">Лінк має бути довгим</a>
+                <span class="notonmobile">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+                <span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+                <a href="index.html" style=" text-decoration-line: underline;">Лінк має бути довгим</a>
+            </p>
+            <p class="inline"> 
+                <a href="index.html" style=" text-decoration-line: underline;">Лінк має бути довгим</a>
+                <span class="notonmobile">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+                <span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+                <a href="index.html" style=" text-decoration-line: underline;">Лінк має бути довгим</a>
+            </p>
+            <p class="inline"> 
+                <a href="index.html" style=" text-decoration-line: underline;">Лінк має бути довгим</a>
+                <span class="notonmobile">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+                <span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+                <a href="index.html" style=" text-decoration-line: underline;">Лінк має бути довгим</a>
+            </p>
+        </div>
+        <div class="kpi">
+            <a hred="index.html" class="imgtextlink">
+                <img src="data/pics/kpilogo.png" style="float:right; margin-top: 2vw;">
+                <p>
+                    Національний технічний <br>
+                    університет України “Київський<br>
+                    політехнічний інститут імені Ігоря<br>
+                    Сікорського”
+                </p>
+            </a>
+            <a href="index.html">
+                <p class="highfont">Зв'язатися з нами</p>
+            </a>
+        </div>
+    </div>
+    <div class="credits">
+        <div class="notonmobile">
+         <p class="inline" style="margin-top: 1.2vw;">
+            <span><a href="index.html">&nbsp;&nbsp;&nbsp;Copyright©2022 NNIATE. All rights reserved</a></span>
+            <span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span><a href="index.html">@gmail.com</a></span>
+            <span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span><a href="index.html">000-000-0000</a></span>
+            <span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span><a href="index.html">Developed by students of the institute as the members of liddweb.com</a></span>
+         </p>
+        </div>
+        <div class="notondesktop">
+            <br>
+            <br>
+            <p>Developed by students of the institute as the members of liddweb.com</p>
+            <br>
+            <br>
+            <p>Copyright©2022 NNIATE. All rights reserved</p>
+        </div>
+    </div>
+</footer>
