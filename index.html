@@ -19,7 +19,7 @@
                 </form>
             </div>
             <div class="navschedule border">
-                <p style="margin-right:1vw;">Розклад занять</p>
+                <p style="margin-right:1vw;"><a href="https://schedule.kpi.ua/">Розклад занять</a></p>
             </div>
 
         </div>
@@ -99,14 +99,13 @@
 
                         </div>
                         <div>
-                            <p>Контакти</p>
+                            <p><a class="button" href="#divOne" style="font-size:7vw;">Контакти</a></p>
                         </div>
                     </nav>
                 </div>
             </div>
 
         </div>
-            
         <div class="navmenu border">
                 <p style="margin-top:2vw;"><a href="index.html">Головна</a></p>
                 <div class="dropdown">
@@ -153,13 +152,109 @@
                     </div>
                 </div>
                 <p style="margin-top:2vw; margin-left:3vw;"><a href="news.html">Новини</a></p>
-                <p style="margin-top:2vw; margin-left:2vw;">Контакти</p>
+                <p style="margin-top:2vw; margin-left:2vw;"><a class="button" href="#divTwo">Контакти</a></p>
         </div>
     </div>
+    
 </header>
+                
 <script>
 
 </script>
+
+
+<div class="overlay" id="divOne">
+    <div class="wrapper">
+        <br>
+        <p class="highfont uppercase" style="width: 85%; padding:4vw;">зв'язатись з нами</p><a class="close" href="#">&times;</a>
+        <br>
+        <div class="content">
+            <div class="container">
+                <form>
+                    <input placeholder="Ім'я" type="text" style="border-bottom:none;">
+                    <input placeholder="e-mail" type="text" style="border-bottom:none;">
+                    <textarea placeholder="Ваше повідомлення" style="height:36vw;"></textarea>
+                    <input type="submit" value="Відправити">
+                    
+                    <div style="border:none; height: 20%;">
+                        <div>
+                            <a href="tel:+0000000000" class="imgtextlink" style="margin-left:1vw;">
+                                <img src="data/pics/phone.png">
+                                <p class="inline" style="margin-left:1vw;"> 
+                                    +0000000000
+                                </p>
+                            </a>
+                            <br>
+                            <a href="mailto:@gmail.com" class="imgtextlink" style="margin-left:1vw;">
+                                <img src="data/pics/mail.png">
+                                <p class="inline"  style="margin-left:1vw;"> 
+                                    @gmail.com
+                                </p>
+                            </a>
+                        </div>
+                            
+                        <div class="lowfont inline" style=" width: 50%; margin-left: 36vw; margin-top: -16vw;">
+                            <a href="index.html" class="imgtextlink">
+                                <img src="data/pics/location.png"> 
+                                <p class="inline" style=" text-align: left; margin-top: -7vw; margin-left: 7vw;"> 
+                                    Київ, метро Політехнічний іститут, 
+                                    вулиця Політехнічна 6
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="overlay" id="divTwo">
+    <div class="wrapper">
+        <br>
+        <p class="highfont uppercase">зв'язатись з нами</p><a class="close" href="#">&times;</a>
+        <br>
+        <div class="content">
+            <div class="container">
+                <form>
+                    <input placeholder="Ім'я" type="text">
+                    <input placeholder="e-mail" type="text">
+                    <textarea placeholder="Ваше повідомлення" style="height:9vw;"></textarea>
+                    <div style=" display: flex; justify-content: space-between;">
+                        <input type="submit" value="Відправити" style="display: inline-block;">
+                            
+                        <div class="lowfont contacts" style="display: inline-block;" style="margin-right:10vw;">
+                            <a href="tel:+0000000000" class="imgtextlink">
+                                <img src="data/pics/phone.png">
+                                <p class="inline"> 
+                                    +0000000000
+                                </p>
+                            </a>
+                            <br>
+                            <a href="mailto:@gmail.com" class="imgtextlink">
+                                <img src="data/pics/mail.png">
+                                <p class="inline"> 
+                                        @gmail.com
+                                </p>
+                            </a>
+                            <br>
+                            <a href="index.html" class="imgtextlink">
+                                <img src="data/pics/location.png"> 
+                                <p class="inline"> 
+                                Київ, метро Політехнічний іститут, 
+                                вулиця Політехнічна 6
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+      
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -177,8 +272,8 @@
             </a>
             <div class="ipze border" style="cursor: pointer;" onclick="window.location='index.html'">
                 <h1 class="highfont uppercase">
-                    <img src="data/pics/atom.png" class="notonhover"> 
-                    <img src="data/pics/atom_white.png" class="onhover notonmobile"> 
+                    <img src="data/pics/ipze.png" class="notonhover"> 
+                    <img src="data/pics/ipze_white.png" class="onhover notonmobile"> 
                     іпзе
                 </h1>
                 <p class="ipzehead notonmobile onhover">Кафедра  інженерії програмного забезпечення в енергетиці</p>
@@ -186,8 +281,8 @@
             </div>
             <div class="tzte border notonmobile" style="cursor: pointer;" onclick="window.location='index.html'">
                 <h1 class="highfont uppercase fliped notonmobile">     
-                    <img src="data/pics/atom.png" class="notonhover"> 
-                    <img src="data/pics/atom_white.png" class="onhover"> 
+                    <img src="data/pics/tzte.png" class="notonhover"> 
+                    <img src="data/pics/tzte_white.png" class="onhover"> 
                     цте
                 </h1>
                 <p class="tztehead notonmobile onhover">Кафедра цифрових технологій в енергетиці</p>
@@ -195,15 +290,15 @@
             </div>
             <div class="tzte border fliped notondesktop" style="cursor: pointer;" onclick="window.location='index.html'">
                 <h1 class="highfont uppercase fliped" style="margin-left: 2vw; margin-top: 43vw; writing-mode:vertical-rl;">      
-                    <img src="data/pics/atom.png" class="notonhover"> 
+                    <img src="data/pics/tzte.png" class="notonhover"> 
                     цте
                 </h1>
             </div>
             <div class="ae border" style="cursor: pointer;" onclick="window.location='index.html'">
                 <h1 class="highfont uppercase">
                     ае
-                    <img src="data/pics/atom.png" class="notonhover"> 
-                    <img src="data/pics/atom_white.png" class="onhover"> 
+                    <img src="data/pics/ae.png" class="notonhover"> 
+                    <img src="data/pics/ae_white.png" class="onhover notonmobile"> 
                 </h1>
                 <p class="aehead notonmobile onhover">Кафедра  атомної енергетики</p>
                 <p class="aeinfo notonmobile onhover">143: Атомна енергетика</p>
@@ -211,16 +306,16 @@
             <div class="tae border" style="cursor: pointer;" onclick="window.location='index.html'">
                 <h1 class="highfont uppercase" style="margin-top:1vw; text-indent: 1vw;">
                     тае
-                    <img src="data/pics/atom.png" class="notonhover"> 
-                    <img src="data/pics/atom_white.png" class="onhover"> 
+                    <img src="data/pics/tae.png" class="notonhover"> 
+                    <img src="data/pics/tae_white.png" class="onhover notonmobile"> 
                 </h1>
                 <p class="taehead notonmobile onhover">Кафедра  теплової та альтернативної енергетики</p>
             </div>
             <div class="aep border" style="cursor: pointer;" onclick="window.location='index.html'">
                 <h1 class="highfont uppercase fliped">
                     аеп
-                    <img src="data/pics/atom.png" class="notonhover"> 
-                    <img src="data/pics/atom_white.png" class="onhover"> 
+                    <img src="data/pics/aep.png" class="notonhover"> 
+                    <img src="data/pics/aep_white.png" class="onhover notonmobile"> 
                 </h1>
                 <p class="aephead notonmobile onhover">Кафедра автоматизації енергетичних процесів</p>
                 <p class="aepinfo notonmobile onhover">151: автоматизація та комп’ютерно-інтегровані технології</p>
