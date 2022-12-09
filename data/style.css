@@ -193,7 +193,7 @@ html { font-family: 'Inter', sans-serif; }
     .topmenuwrap{
         grid-area: 2 / 2 / 3 / 9;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(24, 1fr);
         grid-template-rows: repeat(1, 1fr);
     }
     .topmenuwrap div:hover{
@@ -936,8 +936,6 @@ html { font-family: 'Inter', sans-serif; }
     font-weight: 800;
     text-align: right;
     color:white;
-    
-    overflow-x: scroll;
 }
 .newscontentwrap div{
 
@@ -1028,6 +1026,25 @@ html { font-family: 'Inter', sans-serif; }
  .fridayevents h1{
     padding-top:24vw;
  }
+
+ .pagination{
+
+    line-height: 0vw;
+    color:#1C3964;
+ }
+ .pagination a {
+    font-weight: 600;
+    line-height: 0%;
+    color:#1C3964;
+    margin-bottom: 2vw;
+   }
+ 
+   
+   /* Style the active/current link */
+   .pagination a.active {
+     font-weight: 800;
+   }
+   
 }
 
 /*Science css*/

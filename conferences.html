@@ -7,7 +7,31 @@
 
 <header>
     <div class = "headerwrap border">
-        <div class="topmenuwrap">
+        <div class="topmenuwrap notonmobile">
+
+            <div class="navphone border" style="grid-area:1 / 1 / 2 / 8;">
+                <p><a href="tel:+0000000000" >+0000000000</a></p>
+            </div>
+            <div class="navsearch border" style="grid-area:1 / 8 / 2 / 15;">
+                <form class=" inline" style="margin-right:1vw; margin-top:1vw; width:100%;">
+                    <input type='text' id='userInput' name='userInput' class="lowfont" placeholder='Пошук' style="margin-right:5vw; margin-top:0.2vw;">
+                    <input type="image" name="submit" src="data/pics/search.jpg" alt="Submit" style="height:1.2vw; margin-right: 0.5vw; margin-top: -1vw;" />                
+                </form>
+            </div>
+            <div class="navschedule border" style="grid-area:1 / 15 / 2 / 22;">
+                <p style="margin-right:1vw;"><a href="https://schedule.kpi.ua/">Розклад занять</a></p>
+            </div>
+            <div class="border" style="grid-area:1 / 22 / 2 / 26;">
+                <div class="dropdown" style="margin-right:7vw;">
+                    <p style="margin-right: -5vw;">UA</p>
+                    <div class="dropdown-content" style="color:#1C3964; width:5vw;">
+                        <a rel="noopener" href="entry.html">UA</a>
+                        <a rel="noopener" href="juniorentry.html">EN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="topmenuwrap notondesktop">
 
             <div class="navphone border">
                 <p><a href="tel:+0000000000" >+0000000000</a></p>
@@ -21,7 +45,6 @@
             <div class="navschedule border">
                 <p style="margin-right:1vw;"><a href="https://schedule.kpi.ua/">Розклад занять</a></p>
             </div>
-
         </div>
         <div class="navtop border uppercase">
             <p>Навчально-науковий інститут атомної та теплової енергетики</p>
@@ -101,6 +124,14 @@
                         <div>
                             <p><a class="button" href="#divOne" style="font-size:7vw;">Контакти</a></p>
                         </div>
+                        
+                        <div class="dropdown">
+                            <p>UA</p>
+                            <div class="dropdown-content">
+                                <a rel="noopener" href="index.html">UA</a>
+                                <a rel="noopener" href="index.html">EN</a>
+                            </div>
+                        </div>
                     </nav>
                 </div>
             </div>
@@ -110,7 +141,7 @@
                 <p style="margin-top:2vw;"><a href="index.html">Головна</a></p>
                 <div class="dropdown">
                     <p style="margin-top:2vw;">Факультет</p>
-                    <div class="dropdown-content">
+                    <div class="dropdown-content"  style="width:150%;">
                         <a rel="noopener" href="facultyinfo.html">Про факультет</a>
                         <a rel="noopener" href="history.html">Історія</a>
                         <a rel="noopener" href="index.html">Кафедри</a>
@@ -119,7 +150,7 @@
                 </div>
                 <div class="dropdown">
                     <p style="margin-top:2vw;">Вступ</p>
-                    <div class="dropdown-content">
+                    <div class="dropdown-content"  style="width:150%;">
                         <a rel="noopener" href="entry.html">Вступ на 1 курс (за сертифікатами ЗНО) </a>
                         <a rel="noopener" href="juniorentry.html"> Вступ за дипломом молодшого спеціаліста / фахового молодшого бакалавра</a>
                         <a rel="noopener" href="magistracy.html">Вступ до магістратури</a>
@@ -131,7 +162,7 @@
                 </div>
                 <div class="dropdown">
                     <p style="margin-top:2vw;">Студентам</p>
-                    <div class="dropdown-content">
+                    <div class="dropdown-content"  style="width:150%;">
                         <a rel="noopener" href="catalogue.html">Каталоги дисциплін</a>
                         <a rel="noopener" href="session.html">Сесія</a>
                         <a rel="noopener" href="ratings.html">Рейтинг та стипендія</a>
@@ -146,7 +177,7 @@
     
                 <div class="dropdown">
                     <p style="margin-top:2vw; margin-left: 5vw;">Наука</p>
-                    <div class="dropdown-content">
+                    <div class="dropdown-content"  style="width:150%;">
                         <a rel="noopener" href="science.html">Наука</a>
                         <a rel="noopener" href="scienceawards.html">Наукові досягнення</a>
                     </div>
@@ -358,7 +389,11 @@
             </div>
         </div>
     </div>
-    <details open style="margin-left:50%; color:#1C3964; border:none;">
+    
+    <details open class="notondesktop" style="margin-left:49%; color:#1C3964; border:none; margin-top:3vw;">
+        <summary style=" font-size: 7vw; margin-top:1vw;"></summary>
+    </details>
+    <details open class="notonmobile" style="margin-left:50%; color:#1C3964; border:none;">
         <summary style=" font-size: 2vw; margin-top:1vw;"></summary>
     </details>
 </body>
