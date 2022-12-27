@@ -5,7 +5,22 @@
     <meta name="description" content="ННІАТЕ">
 </head>
 
-<header>
+
+<script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("loadedheader").style.display = "grid";
+      document.getElementById("loadedbody").style.display = "grid";
+      document.getElementById("loadedfooter").style.display = "grid";
+    }
+</script>
+<header id="loadedheader">
     <div class = "headerwrap border">
         <div class="topmenuwrap notonmobile">
 
@@ -73,48 +88,48 @@
                         <div class="dropdown">
                             <p>Факультет</p>
                             <div class="dropdown-content">
-                                <a rel="noopener" href="facultyinfo.html">Про факультет</a>
-                                <a rel="noopener" href="history.html">Історія</a>
-                                <a rel="noopener" href="index.html">Кафедри</a>
-                                <a rel="noopener" href="info.html">Інформаційний пакет</a>
+                                <a href="facultyinfo.html">Про факультет</a>
+                                <a href="history.html">Історія</a>
+                                <a href="index.html">Кафедри</a>
+                                <a href="info.html">Інформаційний пакет</a>
                             </div>
                         </div>
                         <div class="dropdown">
                             <p>Вступ</p>
                             <div class="dropdown-content">
-                                <a rel="noopener" href="entry.html">Вступ на 1 курс (за сертифікатами ЗНО) </a>
-                                <a rel="noopener" href="juniorentry.html"> Вступ за дипломом молодшого спеціаліста / фахового молодшого бакалавра</a>
-                                <a rel="noopener" href="magistracy.html">Вступ до магістратури</a>
-                                <a rel="noopener" href="phd.html">Вступ до аспірантури за програмою підготовки PhD</a>
-                                <a rel="noopener" href="courses.html">Підготовчі курси</a>
-                                <a rel="noopener" href="docs.html">Офіційні документи та корисні посилання</a>
-                                <a rel="noopener" href="superheroes.html">Супергерої</a>
+                                <a href="entry.html">Вступ на 1 курс (за сертифікатами ЗНО) </a>
+                                <a href="juniorentry.html"> Вступ за дипломом молодшого спеціаліста / фахового молодшого бакалавра</a>
+                                <a href="magistracy.html">Вступ до магістратури</a>
+                                <a href="phd.html">Вступ до аспірантури за програмою підготовки PhD</a>
+                                <a href="courses.html">Підготовчі курси</a>
+                                <a href="docs.html">Офіційні документи та корисні посилання</a>
+                                <a href="superheroes.html">Супергерої</a>
                             </div>
                         </div>
                         <div class="dropdown">
                             <p>Студентам</p>
                             <div class="dropdown-content">
-                                <a rel="noopener" href="catalogue.html">Каталоги дисциплін</a>
-                                <a rel="noopener" href="session.html">Сесія</a>
-                                <a rel="noopener" href="ratings.html">Рейтинг та стипендія</a>
+                                <a href="catalogue.html">Каталоги дисциплін</a>
+                                <a href="session.html">Сесія</a>
+                                <a href="ratings.html">Рейтинг та стипендія</a>
                             </div>
                         </div>
                         <div>
                             <p>
-                                <a rel="noopener" href="conferences.html" style="font-size:7vw;">Конференції</a>
+                                <a href="conferences.html" style="font-size:7vw;">Конференції</a>
                             </p> 
                         </div>  
                         <div>
                             <p style="width:110%;">
-                                <a rel="noopener" href="internationaloffice.html" style="font-size:7vw;">Міжнародний офіс</a>
+                                <a href="internationaloffice.html" style="font-size:7vw; margin-right: 8vw;">Міжнародний офіс</a>
                             </p>
                         </div>
             
                         <div class="dropdown">
                             <p>Наука</p>
                             <div class="dropdown-content">
-                                <a rel="noopener" href="science.html">Наука</a>
-                                <a rel="noopener" href="scienceawards.html">Наукові досягнення</a>
+                                <a href="science.html">Наука</a>
+                                <a href="scienceawards.html">Наукові досягнення</a>
                             </div>
                         </div>
                         <div>
@@ -128,8 +143,8 @@
                         <div class="dropdown">
                             <p>UA</p>
                             <div class="dropdown-content">
-                                <a rel="noopener" href="index.html">UA</a>
-                                <a rel="noopener" href="index.html">EN</a>
+                                <a href="index.html">UA</a>
+                                <a href="index.html">EN</a>
                             </div>
                         </div>
                     </nav>
@@ -193,6 +208,7 @@
 
 </script>
 
+
 <div class="overlay" id="divOne">
     <div class="wrapper">
         <br>
@@ -251,26 +267,26 @@
                     <input placeholder="e-mail" type="text">
                     <textarea placeholder="Ваше повідомлення" style="height:9vw;"></textarea>
                     <div style=" display: flex; justify-content: space-between;">
-                        <input type="submit" value="Відправити" style="display: inline-block;">
+                        <input type="submit" value="Відправити" style="display: inline-block; ">
                             
-                        <div class="lowfont contacts" style="display: inline-block;" style="margin-right:10vw;">
+                        <div class="lowfont contacts" style="display: inline-block; margin-left: 8vw;">
                             <a href="tel:+0000000000" class="imgtextlink">
                                 <img src="data/pics/phone.png">
-                                <p class="inline"> 
+                                <p class="inline" style="width:70%;"> 
                                     +0000000000
                                 </p>
                             </a>
                             <br>
                             <a href="mailto:@gmail.com" class="imgtextlink">
                                 <img src="data/pics/mail.png">
-                                <p class="inline"> 
+                                <p class="inline" style="width:70%;"> 
                                         @gmail.com
                                 </p>
                             </a>
                             <br>
                             <a href="index.html" class="imgtextlink">
                                 <img src="data/pics/location.png"> 
-                                <p class="inline"> 
+                                <p class="inline" style="width:70%;"> 
                                 Київ, метро Політехнічний іститут, 
                                 вулиця Політехнічна 6
                                 </p>
@@ -288,8 +304,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
 <div id="header"></div>
-<body>
-    <div class="docswrap">
+<body onload="myFunction()">  
+    <div id="loader">
+        <div class="atom">
+            <div class="electron"></div>
+            <div class="electron"></div>
+            <div class="electron"></div>
+        </div>
+    </div>
+    <div class="docswrap" id="loadedbody">
         <div class="docshead border">
             <p class="highfont uppercase">офіційні документи та корисні посилання</p>
         </div>
@@ -315,7 +338,7 @@
                 </a></p>
             </div>
         </div>
-        <div class="docsnews notonmobile border">
+        <div class="docsnews notonmobile border" style="background-image: url('data/pics/auditorium.png');">
             <div style="margin-top:25vw; padding:1vw;">
                 <p class="highfont uppercase">НОВИНИ</p>
                 <p>Реклама іншої сторінки з сайту</p>
@@ -325,7 +348,7 @@
     </div>
 </body>
 
-<footer>
+<footer id="loadedfooter">
     <div class="footerwrap">
         <div class="lowfont contacts"  >
             <a href="tel:+0000000000" class="imgtextlink">
