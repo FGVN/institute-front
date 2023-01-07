@@ -18,8 +18,17 @@
       document.getElementById("loadedbody").style.display = "grid";
       document.getElementById("loadedfooter").style.display = "grid";
     }
-</script>
 
+    function closemenu( id)
+    {
+        if(document.getElementById(id).style.display == "block"){
+            document.getElementById(id).style.display = "none";
+        }
+        else{
+            document.getElementById(id).style.display = "block";
+        }
+    }
+</script>
 <header id="loadedheader">
     <div class = "headerwrap border">
         <div class="topmenuwrap notonmobile">
@@ -86,8 +95,8 @@
                             <p><a href="index.html" style="font-size:7vw;">Головна</a></p>
                         </div>
                         <div class="dropdown">
-                            <p>Факультет</p>
-                            <div class="dropdown-content">
+                            <p onclick="closemenu(`1`)">Факультет</p>
+                            <div class="dropdown-content" id="1">
                                 <a href="facultyinfo.html">Про факультет</a>
                                 <a href="history.html">Історія</a>
                                 <a href="index.html">Кафедри</a>
@@ -95,8 +104,8 @@
                             </div>
                         </div>
                         <div class="dropdown">
-                            <p>Вступ</p>
-                            <div class="dropdown-content">
+                            <p onclick="closemenu(`2`)">Вступ</p>
+                            <div class="dropdown-content" id="2">
                                 <a href="entry.html">Вступ на 1 курс (за сертифікатами ЗНО) </a>
                                 <a href="juniorentry.html"> Вступ за дипломом молодшого спеціаліста / фахового молодшого бакалавра</a>
                                 <a href="magistracy.html">Вступ до магістратури</a>
@@ -107,8 +116,8 @@
                             </div>
                         </div>
                         <div class="dropdown">
-                            <p>Студентам</p>
-                            <div class="dropdown-content">
+                            <p onclick="closemenu(`3`)">Студентам</p>
+                            <div class="dropdown-content" id="3">
                                 <a href="catalogue.html">Каталоги дисциплін</a>
                                 <a href="session.html">Сесія</a>
                                 <a href="ratings.html">Рейтинг та стипендія</a>
@@ -126,8 +135,8 @@
                         </div>
             
                         <div class="dropdown">
-                            <p>Наука</p>
-                            <div class="dropdown-content">
+                            <p onclick="closemenu(`4`)">Наука</p>
+                            <div class="dropdown-content" id="4">
                                 <a href="science.html">Наука</a>
                                 <a href="scienceawards.html">Наукові досягнення</a>
                             </div>
@@ -141,8 +150,8 @@
                         </div>
                         
                         <div class="dropdown">
-                            <p>UA</p>
-                            <div class="dropdown-content">
+                            <p onclick="closemenu(`5`)">UA</p>
+                            <div class="dropdown-content" id="5">
                                 <a href="index.html">UA</a>
                                 <a href="index.html">EN</a>
                             </div>
@@ -203,11 +212,7 @@
     </div>
     
 </header>
-                
-<script>
-
-</script>
-
+   
 
 <div class="overlay" id="divOne">
     <div class="wrapper">
@@ -323,15 +328,24 @@
             <a href="index.html">
 
             </a>
-            <div class="ipze border" onclick="window.location='index.html'" 
+            <div class="ipze border notonmobile" onclick="window.location='index.html'" 
             style="cursor: pointer;">
                 <h1 class="highfont uppercase">
                     <img src="data/pics/ipze.png" class="notonhover"> 
-                    <img src="data/pics/ipze_white.png" class="onhover notonmobile"> 
+                    <img src="data/pics/ipze_white.png" class="onhover"> 
                     іпзе
                 </h1>
-                <p class="ipzehead notonmobile onhover">Кафедра  інженерії програмного забезпечення в енергетиці</p>
-                <p class="ipzeinfo notonmobile onhover">121:Інженерія програмного забезпечення</p>
+                <p class="ipzehead onhover">Кафедра  інженерії програмного забезпечення в енергетиці</p>
+                <p class="ipzeinfo onhover">121:Інженерія програмного забезпечення</p>
+            </div>
+            <div class="ipze border notondesktop" onclick="window.location='index.html'"
+            style="background-image: url(data/pics/ipzebackground.png);">
+                <h1 class="highfont uppercase" style="text-align:right; margin-top: 10vw; color:white; margin-right: 1vw;">
+                    <img src="data/pics/ipze_white.png"> 
+                    іпзе
+                    <p class="ipzehead" style=" color:white;">Кафедра  інженерії програмного забезпечення в енергетиці</p>
+                    <p class="ipzeinfo" style=" color:white;">121:Інженерія програмного забезпечення</p>
+                </h1>
             </div>
             <div class="tzte border notonmobile" style="cursor: pointer;" onclick="window.location='index.html'">
                 <h1 class="highfont uppercase fliped notonmobile">     
@@ -342,37 +356,63 @@
                 <p class="tztehead notonmobile onhover">Кафедра цифрових технологій в енергетиці</p>
                 <p class="tzteinfo notonmobile onhover">151: автоматизація та комп’ютерно-інтегровані технології</p>
             </div>
-            <div class="tzte border fliped notondesktop" style="cursor: pointer;" onclick="window.location='index.html'">
-                <h1 class="highfont uppercase fliped" style="margin-left: 2vw; margin-top: 43vw; writing-mode:vertical-rl;">      
-                    <img src="data/pics/tzte.png" class="notonhover"> 
+            <div class="tzte border fliped notondesktop" style=" background-image: url(data/pics/tztebackground.png);" onclick="window.location='index.html'">
+                <h1 class="highfont uppercase fliped" 
+                style="margin-left: 2vw; margin-top: 0vw; writing-mode:vertical-rl; color:white;">      
+                    <img src="data/pics/tzte_white.png" class="notonhover"> 
                     цте
+                    <p class="tztehead onhover">Кафедра цифрових технологій в енергетиці</p>
+                    <p class="tzteinfo onhover">151: автоматизація та комп’ютерно-інтегровані технології</p>
                 </h1>
             </div>
-            <div class="ae border" style="cursor: pointer;" onclick="window.location='index.html'">
+            <div class="ae border notonmobile" style="cursor: pointer;" onclick="window.location='index.html'">
                 <h1 class="highfont uppercase">
                     ае
                     <img src="data/pics/ae.png" class="notonhover"> 
                     <img src="data/pics/ae_white.png" class="onhover notonmobile"> 
                 </h1>
-                <p class="aehead notonmobile onhover">Кафедра  атомної енергетики</p>
-                <p class="aeinfo notonmobile onhover">143: Атомна енергетика</p>
+                <p class="aehead onhover">Кафедра  атомної енергетики</p>
+                <p class="aeinfo onhover">143: Атомна енергетика</p>
             </div>
-            <div class="tae border" style="cursor: pointer;" onclick="window.location='index.html'">
+            <div class="ae border notondesktop" style="color:white; background-image: url(data/pics/aebackground.png);" onclick="window.location='index.html'">
+                <h1 class="highfont uppercase" style="margin-top:30vw;">
+                    ае
+                    <img src="data/pics/ae_white.png"> 
+                </h1>
+                <p class="aehead onhover" style="margin-left:1vw;">Кафедра  атомної енергетики</p>
+                <p class="aeinfo onhover" style="margin-left:1vw;">143: Атомна енергетика</p>
+            </div>
+            <div class="tae border notonmobile" style="cursor: pointer;" onclick="window.location='index.html'">
                 <h1 class="highfont uppercase" style="margin-top:1vw; text-indent: 1vw;">
                     тае
                     <img src="data/pics/tae.png" class="notonhover"> 
-                    <img src="data/pics/tae_white.png" class="onhover notonmobile"> 
+                    <img src="data/pics/tae_white.png" class="onhover"> 
                 </h1>
-                <p class="taehead notonmobile onhover">Кафедра  теплової та альтернативної енергетики</p>
+                <p class="taehead onhover">Кафедра  теплової та альтернативної енергетики</p>
             </div>
-            <div class="aep border" style="cursor: pointer;" onclick="window.location='index.html'">
+            <div class="tae border notondesktop" style="color:white; background-image: url(data/pics/taebackground.png);" onclick="window.location='index.html'">
+                <h1 class="highfont uppercase" style="margin-top:1vw; text-indent: 1vw;">
+                    тае
+                    <img src="data/pics/tae_white.png" class="onhover"> 
+                    <p class="taehead onhover">Кафедра  теплової та альтернативної енергетики</p>
+                </h1>
+            </div>
+            <div class="aep border notonmobile" style="cursor: pointer;" onclick="window.location='index.html'">
                 <h1 class="highfont uppercase fliped">
                     аеп
                     <img src="data/pics/aep.png" class="notonhover"> 
                     <img src="data/pics/aep_white.png" class="onhover notonmobile"> 
                 </h1>
-                <p class="aephead notonmobile onhover">Кафедра автоматизації енергетичних процесів</p>
-                <p class="aepinfo notonmobile onhover">151: автоматизація та комп’ютерно-інтегровані технології</p>
+                <p class="aephead onhover">Кафедра автоматизації енергетичних процесів</p>
+                <p class="aepinfo onhover">151: автоматизація та комп’ютерно-інтегровані технології</p>
+            </div>
+            <div class="aep border notondesktop" style="color:white; background-image: url(data/pics/aepbackground.png);" onclick="window.location='index.html'">
+                <h1 class="highfont uppercase fliped" style="margin-top:-2vw;">
+                    аеп
+                    <img src="data/pics/aep_white.png" class="onhover"> 
+                    <p class="aephead">Кафедра автоматизації енергетичних процесів</p>
+                    <p class="aepinfo">151: автоматизація та<br>комп’ютерно-інтегровані<br>технології</p>
+                </h1>
             </div>
             <div class="news border">
                 <h1 class="highfont uppercase notondesktop">
@@ -508,7 +548,10 @@
                     Сікорського”
                 </p>
             </a>
-            <a href="index.html">
+            <a class="notonmobile" href="#divTwo">
+                <p class="highfont">Зв'язатися з нами</p>
+            </a>
+            <a class="notondesktop" href="#divOne">
                 <p class="highfont">Зв'язатися з нами</p>
             </a>
         </div>

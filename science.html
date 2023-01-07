@@ -18,8 +18,17 @@
       document.getElementById("loadedbody").style.display = "grid";
       document.getElementById("loadedfooter").style.display = "grid";
     }
-</script>
 
+    function closemenu( id)
+    {
+        if(document.getElementById(id).style.display == "block"){
+            document.getElementById(id).style.display = "none";
+        }
+        else{
+            document.getElementById(id).style.display = "block";
+        }
+    }
+</script>
 <header id="loadedheader">
     <div class = "headerwrap border">
         <div class="topmenuwrap notonmobile">
@@ -86,8 +95,8 @@
                             <p><a href="index.html" style="font-size:7vw;">Головна</a></p>
                         </div>
                         <div class="dropdown">
-                            <p>Факультет</p>
-                            <div class="dropdown-content">
+                            <p onclick="closemenu(`1`)">Факультет</p>
+                            <div class="dropdown-content" id="1">
                                 <a href="facultyinfo.html">Про факультет</a>
                                 <a href="history.html">Історія</a>
                                 <a href="index.html">Кафедри</a>
@@ -95,8 +104,8 @@
                             </div>
                         </div>
                         <div class="dropdown">
-                            <p>Вступ</p>
-                            <div class="dropdown-content">
+                            <p onclick="closemenu(`2`)">Вступ</p>
+                            <div class="dropdown-content" id="2">
                                 <a href="entry.html">Вступ на 1 курс (за сертифікатами ЗНО) </a>
                                 <a href="juniorentry.html"> Вступ за дипломом молодшого спеціаліста / фахового молодшого бакалавра</a>
                                 <a href="magistracy.html">Вступ до магістратури</a>
@@ -107,8 +116,8 @@
                             </div>
                         </div>
                         <div class="dropdown">
-                            <p>Студентам</p>
-                            <div class="dropdown-content">
+                            <p onclick="closemenu(`3`)">Студентам</p>
+                            <div class="dropdown-content" id="3">
                                 <a href="catalogue.html">Каталоги дисциплін</a>
                                 <a href="session.html">Сесія</a>
                                 <a href="ratings.html">Рейтинг та стипендія</a>
@@ -126,8 +135,8 @@
                         </div>
             
                         <div class="dropdown">
-                            <p>Наука</p>
-                            <div class="dropdown-content">
+                            <p onclick="closemenu(`4`)">Наука</p>
+                            <div class="dropdown-content" id="4">
                                 <a href="science.html">Наука</a>
                                 <a href="scienceawards.html">Наукові досягнення</a>
                             </div>
@@ -141,8 +150,8 @@
                         </div>
                         
                         <div class="dropdown">
-                            <p>UA</p>
-                            <div class="dropdown-content">
+                            <p onclick="closemenu(`5`)">UA</p>
+                            <div class="dropdown-content" id="5">
                                 <a href="index.html">UA</a>
                                 <a href="index.html">EN</a>
                             </div>
@@ -203,12 +212,7 @@
     </div>
     
 </header>
-                
-<script>
-
-</script>
-
-
+   
 <div class="overlay" id="divOne">
     <div class="wrapper">
         <br>
@@ -467,7 +471,10 @@
                     Сікорського”
                 </p>
             </a>
-            <a href="index.html">
+            <a class="notonmobile" href="#divTwo">
+                <p class="highfont">Зв'язатися з нами</p>
+            </a>
+            <a class="notondesktop" href="#divOne">
                 <p class="highfont">Зв'язатися з нами</p>
             </a>
         </div>
