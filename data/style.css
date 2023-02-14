@@ -71,7 +71,9 @@ html { font-family: 'Inter', sans-serif; }
     to { transform: rotateZ(-460deg) rotateX(-60deg) rotateY(60deg); }
   }
   
-  
+  .hidden {
+    display: none;
+  }
   .atom {
     margin: 50px auto;
     margin-top: 20%;
@@ -82,6 +84,12 @@ html { font-family: 'Inter', sans-serif; }
     perspective: 300px;
     transform-style: preserve-3d;
   }
+  
+@media screen and (max-width: 767px){
+    .atom{
+        margin-top: 40%;
+    }
+}
   .atom:before {
       content: '';
       position: absolute;
@@ -93,7 +101,7 @@ html { font-family: 'Inter', sans-serif; }
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    background: #555;
+    background: #1C3964;
   }
   .atom .electron {
     position: absolute;
@@ -105,7 +113,7 @@ html { font-family: 'Inter', sans-serif; }
       width: 100px;
     height: 100px;
     border-radius: 50px;
-    border: 2px solid #666;
+    border: 2px solid #1C3964;
     transform-style: preserve-3d;
   }
   .atom .electron:before {
@@ -118,8 +126,9 @@ html { font-family: 'Inter', sans-serif; }
     width: 8px;
     height: 8px;
     border-radius: 4px;
-    background: #666;
+    background: #1C3964;
     transform-origin: 50% 50% 0;
+    
   }
   .atom .electron:nth-child(1) {
     transform: rotateY(70deg) rotateZ(20deg);
@@ -186,7 +195,7 @@ html { font-family: 'Inter', sans-serif; }
         position: fixed;
         top: 0vw;
         background-color: white;
-        z-index: 20;
+        z-index: 100;
     }
     body{
         margin-top:30vw;
@@ -219,7 +228,7 @@ html { font-family: 'Inter', sans-serif; }
     }
 
     .navlogo a img{
-        height:13vw; margin-right: 6vw; margin-top:1.5vw;
+        height:17vw; margin-right: 6vw; margin-top:1.5vw;
     }
     .navphone{
         grid-area: 1 / 1 / 2 / 3;
@@ -283,9 +292,22 @@ html { font-family: 'Inter', sans-serif; }
         transition: all 0.3s ease-in-out;
      }
   
-     .navlogo a img{
+     .navlogo a{
           height:6.5vw; margin-right: 6vw; margin-top:1.5vw;
      }
+     .navlogo a img{
+        height: 8vw;margin-top:0.5vw;
+     }
+     
+    .navlogo .onhover{
+        display:none;
+    }
+    .navlogo:hover .notonhover{
+        display: none;
+    }
+    .navlogo:hover .onhover{
+        display: inline-block;
+    }
     .navphone { grid-area: 1 / 1 / 2 / 2; }
     .navphone p a{
         margin-right:1vw;
@@ -451,6 +473,7 @@ html { font-family: 'Inter', sans-serif; }
         color:#1C3964;
         font-weight: 500;
         height:22%;
+        margin-bottom: 10vw;
     }
     .inline {
         display: inline-block;
@@ -589,7 +612,6 @@ html { font-family: 'Inter', sans-serif; }
     .tzte h1{
         margin-left: 12vw; 
         margin-top: 1vw; 
-        writing-mode:vertical-rl;
     }
 
 
@@ -597,7 +619,7 @@ html { font-family: 'Inter', sans-serif; }
 
     .ae h1{
         margin-top:42vw; 
-        text-indent: 1vw;
+        text-transform: uppercase;
     }
 
     .aep { grid-area: 11 / 2 / 22 / 3; }
@@ -605,7 +627,6 @@ html { font-family: 'Inter', sans-serif; }
     .aep h1{
         margin-left: 1vw; 
         margin-top: 40vw; 
-        writing-mode:vertical-rl;
     }
 
     .tae { grid-area: 22 / 1 / 28 / 3;}
@@ -703,12 +724,9 @@ html { font-family: 'Inter', sans-serif; }
     text-align: right;
  }
  .ipze h1{
-    margin-top: 20vw; 
-    margin-right:1vw;
- }
- .ipze:hover h1{
     margin-top: 15vw; 
     margin-left:20vw;
+    margin-right:1vw;
  }
  .ipze:hover{
     background-image: url(pics/ipzebackground.png);
@@ -724,14 +742,14 @@ html { font-family: 'Inter', sans-serif; }
 .ipze:hover h1 .onhover{
     display:inline;
 }
-.ipze:hover .ipzehead{
+.ipze .ipzehead{
     margin-right:1vw;
     line-height: 1.2vw;
     font-weight: 600;
     display:inline-block;
     width:80%;
 }
-.ipze:hover .ipzeinfo{
+.ipze .ipzeinfo{
     margin-top:0vw;
     margin-right:1vw;
     line-height: 1vw;
@@ -752,7 +770,7 @@ html { font-family: 'Inter', sans-serif; }
     margin-top: 1vw; 
     writing-mode:vertical-rl;
 }
- .tzte:hover h1{
+ .tzte h1{
     margin-top: 1vw; 
     margin-left:1vw;
  }
@@ -773,7 +791,7 @@ html { font-family: 'Inter', sans-serif; }
 .tzte .onhover{
     display:none;
 }
-.tzte:hover .tztehead{
+.tzte .tztehead{
     margin-top:-6.7vw;
     margin-left:4vw;
     line-height: 1.2vw;
@@ -781,7 +799,7 @@ html { font-family: 'Inter', sans-serif; }
     display:inline-block;
     width:80%;
 }
-.tzte:hover .tzteinfo{
+.tzte .tzteinfo{
     margin-top:-4vw;
     margin-left:4vw;
     line-height: 1vw;
@@ -810,7 +828,7 @@ html { font-family: 'Inter', sans-serif; }
     background-size:cover;
    color: white;
 }
-.ae:hover h1{
+.ae h1{
     margin-top: 7.5vw; 
     text-indent: 1vw;
  }
@@ -822,14 +840,14 @@ html { font-family: 'Inter', sans-serif; }
     display:inline;
 }
 
-.ae:hover .aehead{
+.ae .aehead{
     margin-left:1vw;
     line-height: 0vw;
     font-weight: 600;
     display:inline-block;
     width:80%;
 }
-.ae:hover .aeinfo{
+.ae .aeinfo{
     margin-left:1vw;
     line-height: 1vw;
     font-size: 0.75vw;
@@ -858,12 +876,29 @@ html { font-family: 'Inter', sans-serif; }
 .tae:hover .onhover{
     display:inline;
 }
-.tae:hover .taehead{
+.tae .taehead{
     width:60%;
     margin-left:1vw;
     line-height: 1vw;
     font-weight: 600;
     display:inline-block;
+}
+
+.tae .taeinfo{
+    margin-left:1vw;
+    line-height: 1vw;
+    font-size: 0.75vw;
+    font-weight: 600;
+    display:inline-block;
+    width:80%;
+}
+.tae:hover .taeinfo{
+    margin-left:1vw;
+    line-height: 1vw;
+    font-size: 0.75vw;
+    font-weight: 600;
+    display:inline-block;
+    width:80%;
 }
 
 .aep { 
@@ -880,7 +915,7 @@ html { font-family: 'Inter', sans-serif; }
     writing-mode:vertical-rl;
 }
 
-.aep:hover h1{
+.aep h1{
     margin-top:24vw; 
     margin-left:14vw;
  }
@@ -901,7 +936,7 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 
-.aep:hover .aephead{
+.aep .aephead{
     margin-top:-7vw;
     margin-left:1vw;
     line-height: 1.2vw;
@@ -909,7 +944,7 @@ html { font-family: 'Inter', sans-serif; }
     display:inline-block;
     width:80%;
 }
-.aep:hover .aepinfo{
+.aep .aepinfo{
     margin-top:-4vw;
     margin-left:1vw;
     line-height: 1vw;
@@ -1550,6 +1585,7 @@ html { font-family: 'Inter', sans-serif; }
         color: #FFD600; 
         margin-top: 10vw;
         font-size: 5vw;
+        line-height: 5.5vw;
     }
 
     .specialty1 { 
@@ -2474,6 +2510,9 @@ html { font-family: 'Inter', sans-serif; }
     }
     .gridforabout{
         grid-area: 4 / 1 / 6 / 2;
+    }
+    .gridforabout p {
+        margin-top: 1vw;
     }
 
 
@@ -4521,6 +4560,15 @@ html { font-family: 'Inter', sans-serif; }
         line-height: 1vw;
         font-size: 1vw;
     }
+    select{
+        background-image: url("pics/triangle.png");
+        background-repeat: no-repeat;
+        background-size: 1.2vw;
+        border:none;
+        appearance: none;
+        width:1vw;
+        height: 1vw;
+    }
 }
 @media screen and (max-width:767px){
     .highfont{
@@ -4538,6 +4586,15 @@ html { font-family: 'Inter', sans-serif; }
         font-weight: 500;
         line-height: 3vw;
         font-size: 3vw;
+    }
+    select{
+        background-image: url("pics/triangle.png");
+        background-repeat: no-repeat;
+        background-size: 4vw;
+        border:none;
+        appearance: none;
+        width:1vw;
+        height:1vw;
     }
 }
 .uppercase{
