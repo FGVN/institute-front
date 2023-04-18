@@ -1563,20 +1563,15 @@ html { font-family: 'Inter', sans-serif; }
 
     .entrywrap {
         width: 100%;
-        height: 850vw;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(94, 1fr);
+        height: 1550vw;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         color:#1C3964;
     }
-    .entryhead { grid-area: 1 / 1 / 4 / 2; }
     .entryhead div{
         padding:1vw; 
         margin-top:7vw;
     }
-    .entryformula { grid-area: 4 / 1 / 22 / 2; }
     .entryformula div{
         padding:4vw; 
         font-weight:600;
@@ -1588,265 +1583,103 @@ html { font-family: 'Inter', sans-serif; }
         line-height: 5.5vw;
     }
 
-    .specialty1 { 
-        grid-area: 22 / 1 / 24 / 2;
+    .specialty { 
         display:grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(1, 1fr);
         font-weight: 800;
+        height: 18vw;
      }
-     .specialtycode1{
-        grid-area: 1 / 1 / 2 / 2;
+     .specialtycode{
         color: white;
         background-color:  #FFD600;
         text-align: center;
+        width: 20vw;
     }
-    .specialtycode1 p{
+    .specialtycode p{
         font-size:8vw;
         margin-top: 7vw;
      }
-    .specialtyname1{
-        grid-area: 1 / 2 / 2 / 5;
+    .specialtyname{
         text-align: left;
+        width: 80vw;
     }
-     .specialtyname1 p{
+     .specialtyname p{
          font-size:5vw; 
          margin-left:1vw;
          margin-top:4vw;
          line-height: 5vw;
      }
-    
-    .certificates1 { grid-area: 24 / 1 / 27 / 2; }
-    .certificates1 div{
+    .certificates{
+        height: 27vw;
+        margin-top: -2.5vw;
+    }
+    .certificates div{
         padding:2vw;
     }
-    .certificates1 div .midfont{
+    .certificates div .midfont{
         line-height:5vw;
     }
-    .certificates1 div p{
+    .certificates div p{
         line-height:3vw; 
         margin-top:2vw;
     }
-    .coefficients1 { grid-area: 27 / 1 / 33 / 2; }
-    .coefficients1 div{
+    .coefficients{
+        margin-top: -2.5vw;
+    }
+    .coefficients div{
         margin-left:17vw; 
         margin-top:5vw;
     }
-    .coefficients1 div p{
+    .coefficients div p{
         margin-bottom: 7vw;
     }
-    .coefficients1 div span{  
+    .coefficients div span{  
         line-height:4vw;
     }
-    .price1 { grid-area: 33 / 1 / 37 / 2; }
-    .price1 div{
+    .price{
+        margin-top: -2.7vw;
+    }
+    .price div{
         padding:2vw;
     }
-    .price1 div p{
+    .price div p{
         margin-top:5vw;
     }
-
-    .marks1 { grid-area: 37 / 1 / 40 / 2; }
-    .marks1 div p{
+    
+    .marks{
+        height: 35vw;
+        margin-top: -2.7vw;
+    }
+    .marks div p{
         margin-left:2vw;
         line-height:5vw; 
-        margin-top:2vw;
+        margin-top:7vw;
     }
 
-    .years1 { grid-area: 40 / 1 / 44 / 2; }
-    .years1 div{
+    .years{
+        height: 50vw;
+    }
+    .years div{
         margin-left:12vw; 
     }
-    .years1 div p{
-        margin-top:5vw;
+    .years div p{
+        margin-top:10vw;
     }
 
-    .jobexamples1 { grid-area: 44 / 1 / 47 / 2; }
-    .jobexamples1 div{
+    .jobexamples div{
         padding:1vw;
         margin-left: 1vw;
     }
-    .jobexamples1 div .midfont{
+    .jobexamples div .midfont{
         margin-top:1vw;
         line-height:5vw;
     }
-    .jobexamples1 div p{
+    .jobexamples div p{
         line-height:4vw; 
     }
 
     
-    .specialty2 { 
-        grid-area: 47 / 1 / 49 / 2;
-        display:grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        font-weight: 800;
-     }
-     .specialtycode2{
-        grid-area: 1 / 1 / 2 / 2;
-        color: white;
-        background-color:  #FFD600;
-        text-align: center;
-    }
-    .specialtycode2 p{
-        font-size:8vw;
-        margin-top: 7vw;
-     }
-    .specialtyname2{
-        grid-area: 1 / 2 / 2 / 5;
-        text-align: left;
-    }
-     .specialtyname2 p{
-         font-size:5vw; 
-         margin-left:1vw;
-         margin-top:4vw;
-         line-height: 5vw;
-     }
-    
-    .certificates2 { grid-area: 49 / 1 / 52 / 2; }
-    .certificates2 div{
-        padding:2vw;
-    }
-    .certificates2 div .midfont{
-        line-height:5vw;
-    }
-    .certificates2 div p{
-        line-height:3vw; 
-        margin-top:2vw;
-    }
-    .coefficients2 { grid-area: 52 / 1 / 58 / 2; }
-    .coefficients2 div{
-        margin-left:17vw; 
-        margin-top:5vw;
-    }
-    .coefficients2 div p{
-        margin-bottom: 7vw;
-    }
-    .coefficients2 div span{  
-        line-height:4vw;
-    }
-    .price2 { grid-area: 58 / 1 / 62 / 2; }
-    .price2 div{
-        padding:2vw;
-    }
-    .price2 div p{
-        margin-top:5vw;
-    }
-
-    .marks2 { grid-area: 62 / 1 / 63 / 2; }
-    .marks2 div p{
-        margin-left:2vw;
-        line-height:5vw; 
-        margin-top:2vw;
-    }
-
-    .years2 { grid-area: 63 / 1 / 67 / 2; }
-    .years2 div{
-        margin-left:12vw; 
-    }
-    .years2 div p{
-        margin-top:5vw;
-    }
-
-    .jobexamples2 { grid-area: 67 / 1 / 70 / 2; }
-    .jobexamples2 div{
-        padding:1vw;
-        margin-left: 1vw;
-    }
-    .jobexamples2 div .midfont{
-        margin-top:1vw;
-        line-height:5vw;
-    }
-    .jobexamples2 div p{
-        line-height:4vw; 
-    }
-
-
-    .specialty3 { 
-        grid-area: 70 / 1 / 72 / 2;
-        display:grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        font-weight: 800;
-     }
-     .specialtycode3{
-        grid-area: 1 / 1 / 2 / 2;
-        color: white;
-        background-color:  #FFD600;
-        text-align: center;
-    }
-    .specialtycode3 p{
-        font-size:8vw;
-        margin-top: 7vw;
-     }
-    .specialtyname3{
-        grid-area: 1 / 2 / 2 / 5;
-        text-align: left;
-    }
-     .specialtyname3 p{
-         font-size:5vw; 
-         margin-left:1vw;
-         margin-top:4vw;
-         line-height: 5vw;
-     }
-    
-    .certificates3 { grid-area: 72 / 1 / 75 / 2; }
-    .certificates3 div{
-        padding:2vw;
-    }
-    .certificates3 div .midfont{
-        line-height:5vw;
-    }
-    .certificates3 div p{
-        line-height:3vw; 
-        margin-top:2vw;
-    }
-    .coefficients3 { grid-area: 75 / 1 / 81 / 2; }
-    .coefficients3 div{
-        margin-left:17vw; 
-        margin-top:5vw;
-    }
-    .coefficients3 div p{
-        margin-bottom: 7vw;
-    }
-    .coefficients3 div span{  
-        line-height:4vw;
-    }
-    .price3 { grid-area: 81 / 1 / 85 / 2; }
-    .price3 div{
-        padding:2vw;
-    }
-    .price3 div p{
-        margin-top:5vw;
-    }
-
-    .marks3 { grid-area: 85 / 1 / 88 / 2; }
-    .marks3 div p{
-        margin-left:2vw;
-        line-height:5vw; 
-        margin-top:2vw;
-    }
-
-    .years3 { grid-area: 88 / 1 / 92 / 2; }
-    .years3 div{
-        margin-left:12vw; 
-    }
-    .years3 div p{
-        margin-top:5vw;
-    }
-
-    .jobexamples3 { grid-area: 92 / 1 / 95 / 2; }
-    .jobexamples3 div{
-        padding:1vw;
-        margin-left: 1vw;
-    }
-    .jobexamples3 div .midfont{
-        margin-top:1vw;
-        line-height:5vw;
-    }
-    .jobexamples3 div p{
-        line-height:4vw; 
-    }
 }
 
 @media screen and (min-width:768px){
@@ -1862,13 +1695,18 @@ html { font-family: 'Inter', sans-serif; }
         color:#1C3964;
     }
 
-    .entryhead { grid-area: 1 / 1 / 3 / 2; }
+    .entryhead { grid-area: 1 / 1 / 3 / 2;
+    height: 10vw; }
     .entryhead div{
         padding:1vw; 
         margin-top:3vw;
     }
 
-    .entryformula { grid-area: 3 / 1 / 50 / 2; }
+    .entryformula { 
+        grid-area: 3 / 1 / 50 / 2;
+        margin-top: -4vw;
+        width: 34vw; 
+    }
     .entryformula div{
         padding:2vw; 
         font-weight:600;
@@ -1878,495 +1716,106 @@ html { font-family: 'Inter', sans-serif; }
         font-size: 1.2vw;
     }
 
-    .specialty1 { 
-        grid-area: 1 / 2 / 2 / 4;
+    .specialty { 
         display:grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: 1fr;
         font-weight: 800;
+        width:66vw;
+        height: 5vw;
      }
-    .specialtycode1{
+    .specialtycode{
         grid-area: 1 / 1 / 2 / 2;
         color: white;
         background-color:  #FFD600;
         text-align: center;
     }
-    .specialtycode1 p{
+    .specialtycode p{
        font-size:2.5vw;
     }
-    .specialtyname1{
+    .specialtyname{
         grid-area: 1 / 2 / 2 / 9;
         text-align: left;
     }
-    .specialtyname1 p{
+    .specialtyname p{
         font-size:1.5vw; 
         margin-left:1vw;
     }
     
-    .certificates1 { grid-area: 2 / 2 / 4 / 3; }
-    .certificates1 div{
+    .certificates { 
+        width: 33vw;
+        height: 9vw;
+    }
+    .certificates div{
         padding:1vw;
     }
-    .certificates1 div .midfont{
+    .certificates div .midfont{
         line-height:1.5vw;
     }
-    .certificates1 div p{
+    .certificates div p{
         line-height:1.5vw; 
-        margin-top:-0.2vw;
+        margin-top:0.5vw;
     }
 
-    .marks1 { grid-area: 2 / 3 / 4 / 4; }
-    .marks1 div{
+    .marks { 
+        width:33vw; 
+        margin-left: -33vw;
+    }
+
+    .marks div{
         padding:1vw;
     }
-    .marks1 div .midfont{
+    .marks div .midfont{
         line-height:1.5vw;
     }
-    .marks1 div p{
+    .marks div p{
         line-height:1.5vw; 
-        margin-top:-0.2vw;
+        margin-top:0vw;
     }
 
-    .coefficients1 { grid-area: 4 / 2 / 7 / 3; }
-    .coefficients1 div{
+    .coefficients { 
+        width: 33vw;
+        height: 15vw;
+    }
+    .coefficients div{
         margin-left:6vw; 
         margin-right:6vw;
     }
-    .coefficients1 div span{  
+    .coefficients div span{  
         line-height:1.5vw;
     }
 
-    .years1 { grid-area: 4 / 3 / 7 / 4; }
-    .years1 div{
+    .years { 
+        width: 33vw;
+        margin-left: -33vw;
+     }
+    .years div{
         margin-left:6vw; 
         margin-right:6vw; 
         margin-top:3vw;
     }
 
-    .price1 { grid-area: 7 / 2 / 9 / 3; }
-    .price1 div{
+    .price { width: 33vw; }
+    .price div{
         padding:1vw;
     }
 
-    .jobexamples1 { grid-area: 7 / 3 / 9 / 4; }
-    .jobexamples1 div{
+    .jobexamples { 
+        width: 33vw;
+        margin-left: -33vw;
+     }
+    .jobexamples div{
         padding:1vw;
     }
-    .jobexamples1 div .midfont{
+    .jobexamples div .midfont{
         margin-top:1vw;
         line-height:2vw;
     }
-    .jobexamples1 div p{
+    .jobexamples div p{
         line-height:1.5vw; 
         margin-top:-0.2vw;
     }
     
-    .specialty2 { 
-        grid-area: 9 / 2 / 10 / 4;
-        display:grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        font-weight: 800;
-    }
-    .specialtycode2{
-        grid-area: 1 / 1 / 2 / 2;
-        color: white;
-        background-color:  #FFD600;
-        text-align: center;
-    }
-    .specialtycode2 p{
-       font-size:2.5vw;
-    }
-    .specialtyname2{
-        grid-area: 1 / 2 / 2 / 9;
-        text-align: left;
-    }
-    .specialtyname2 p{
-        font-size:1.5vw; 
-        margin-left:1vw;
-    }
-    .certificates2 { grid-area: 10 / 2 / 12 / 3; }
-    .certificates2 div{
-        padding:1vw;
-    }
-    .certificates2 div .midfont{
-        line-height:1.5vw;
-    }
-    .certificates2 div p{
-        line-height:1.5vw; 
-        margin-top:-0.2vw;
-    }
-
-    .marks2 { grid-area: 10 / 3 / 12 / 4; }
-    .marks2 div{
-        padding:1vw;
-    }
-    .marks2 div .midfont{
-        line-height:1.5vw;
-    }
-    .marks2 div p{
-        line-height:1.5vw; 
-        margin-top:-0.2vw;
-    }
-
-    .coefficients2 { grid-area: 12 / 2 / 15 / 3; }
-    .coefficients2 div{
-        margin-left:6vw; 
-        margin-right:6vw;
-    }
-    .coefficients2 div span{  
-        line-height:1.5vw;
-    }
-
-    .years2 { grid-area: 12 / 3 / 15 / 4; }
-    .years2 div{
-        margin-left:6vw; 
-        margin-right:6vw; 
-        margin-top:3vw;
-    }
-    .price2 { grid-area: 15 / 2 / 17 / 3; }
-    .price2 div{
-        padding:1vw;
-    }
-
-    .jobexamples2 { grid-area: 15 / 3 / 17 / 4; }
-    .jobexamples2 div{
-        padding:1vw;
-    }
-    .jobexamples2 div .midfont{
-        margin-top:1vw;
-        line-height:2vw;
-    }
-    .jobexamples2 div p{
-        line-height:1.5vw; 
-        margin-top:-0.2vw;
-    }
-
-    .specialty3 { 
-        grid-area: 17 / 2 / 18 / 4;
-        display:grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        font-weight: 800;
-    }
-    .specialtycode3{
-        grid-area: 1 / 1 / 2 / 2;
-        color: white;
-        background-color:  #FFD600;
-        text-align: center;
-    }
-    .specialtycode3 p{
-       font-size:2.5vw;
-    }
-    .specialtyname3{
-        grid-area: 1 / 2 / 2 / 9;
-        text-align: left;
-    }
-    .specialtyname3 p{
-        font-size:1.5vw; 
-        margin-left:1vw;
-    }
-    .certificates3 { grid-area: 18 / 2 / 20 / 3; }
-    .certificates3 div{
-        padding:1vw;
-    }
-    .certificates3 div .midfont{
-        line-height:1.5vw;
-    }
-    .certificates3 div p{
-        line-height:1.5vw; 
-        margin-top:-0.2vw;
-    }
-
-    .marks3 { grid-area: 18 / 3 / 20 / 4; }
-    .marks3 div{
-        padding:1vw;
-    }
-    .marks3 div .midfont{
-        line-height:1.5vw;
-    }
-    .marks3 div p{
-        line-height:1.5vw; 
-        margin-top:-0.2vw;
-    }
-
-    .coefficients3 { grid-area: 20 / 2 / 23 / 3; }
-    .coefficients3 div{
-        margin-left:6vw; 
-        margin-right:6vw;
-    }
-    .coefficients3 div span{  
-        line-height:1.5vw;
-    }
-
-    .years3 { grid-area: 20 / 3 / 23 / 4; }
-    .years3 div{
-        margin-left:6vw; 
-        margin-right:6vw; 
-        margin-top:3vw;
-    }
-    .price3 { grid-area: 23 / 2 / 25 / 3; }
-    .price3 div{
-        padding:1vw;
-    }
-
-    .jobexamples3 { grid-area: 23 / 3 / 25 / 4; }
-    .jobexamples3 div{
-        padding:1vw;
-    }
-    .jobexamples3 div .midfont{
-        margin-top:1vw;
-        line-height:2vw;
-    }
-    .jobexamples3 div p{
-        line-height:1.5vw; 
-        margin-top:-0.2vw;
-    }
-
-
-    .specialty4 { 
-        grid-area: 25 / 2 / 26 / 4;
-        display:grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        font-weight: 800;
-    }
-    .specialtycode4{
-        grid-area: 1 / 1 / 2 / 2;
-        color: white;
-        background-color:  #FFD600;
-        text-align: center;
-    }
-    .specialtycode4 p{
-       font-size:2.5vw;
-    }
-    .specialtyname4{
-        grid-area: 1 / 2 / 2 / 9;
-        text-align: left;
-    }
-    .specialtyname4 p{
-        font-size:1.5vw; 
-        margin-left:1vw;
-    }
-    .certificates4 { grid-area: 26 / 2 / 28 / 3; }
-    .certificates4 div{
-        padding:1vw;
-    }
-    .certificates4 div .midfont{
-        line-height:1.5vw;
-    }
-    .certificates4 div p{
-        line-height:1.5vw; 
-        margin-top:-0.2vw;
-    }
-
-    .marks4 { grid-area: 26 / 3 / 28 / 4; }
-    .marks4 div{
-        padding:1vw;
-    }
-    .marks4 div .midfont{
-        line-height:1.5vw;
-    }
-    .marks4 div p{
-        line-height:1.5vw; 
-        margin-top:-0.2vw;
-    }
-
-    .coefficients4 { grid-area: 28 / 2 / 31 / 3; }
-    .coefficients4 div{
-        margin-left:6vw; 
-        margin-right:6vw;
-    }
-    .coefficients4 div span{  
-        line-height:1.5vw;
-    }
-
-    .years4 { grid-area: 28 / 3 / 31 / 4; }
-    .years4 div{
-        margin-left:6vw; 
-        margin-right:6vw; 
-        margin-top:3vw;
-    }
-    .price4 { grid-area: 31 / 2 / 34 / 3; }
-    .price4 div{
-        padding:1vw;
-    }
-
-    .jobexamples4 { grid-area: 31 / 3 / 34 / 4; }
-    .jobexamples4 div{
-        padding:1vw;
-    }
-    .jobexamples4 div .midfont{
-        margin-top:1vw;
-        line-height:2vw;
-    }
-    .jobexamples4 div p{
-        line-height:1.5vw; 
-        margin-top:-0.2vw;
-    }
-
-    .specialty5 { 
-        grid-area: 34 / 2 / 35 / 4;
-        display:grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        font-weight: 800;
-    }
-    .specialtycode5{
-        grid-area: 1 / 1 / 2 / 2;
-        color: white;
-        background-color:  #FFD600;
-        text-align: center;
-    }
-    .specialtycode5 p{
-       font-size:2.5vw;
-    }
-    .specialtyname5{
-        grid-area: 1 / 2 / 2 / 9;
-        text-align: left;
-    }
-    .specialtyname5 p{
-        font-size:1.5vw; 
-        margin-left:1vw;
-    }
-    .certificates5 { grid-area: 35 / 2 / 37 / 3; }
-    .certificates5 div{
-        padding:1vw;
-    }
-    .certificates5 div .midfont{
-        line-height:1.5vw;
-    }
-    .certificates5 div p{
-        line-height:1.5vw; 
-        margin-top:-0.2vw;
-    }
-
-    .marks5 { grid-area: 35 / 3 / 37 / 4; }
-    .marks5 div{
-        padding:1vw;
-    }
-    .marks5 div .midfont{
-        line-height:1.5vw;
-    }
-    .marks5 div p{
-        line-height:1.5vw; 
-        margin-top:-0.2vw;
-    }
-
-    .coefficients5 { grid-area: 37 / 2 / 40 / 3; }
-    .coefficients5 div{
-        margin-left:6vw; 
-        margin-right:6vw;
-    }
-    .coefficients5 div span{  
-        line-height:1.5vw;
-    }
-
-    .years5 { grid-area: 37 / 3 / 40 / 4; }
-    .years5 div{
-        margin-left:6vw; 
-        margin-right:6vw; 
-        margin-top:3vw;
-    }
-    .price5 { grid-area: 40 / 2 / 42 / 3; }
-    .price5 div{
-        padding:1vw;
-    }
-
-    .jobexamples5 { grid-area: 40 / 3 / 42 / 4; }
-    .jobexamples5 div{
-        padding:1vw;
-    }
-    .jobexamples5 div .midfont{
-        margin-top:1vw;
-        line-height:2vw;
-    }
-    .jobexamples5 div p{
-        line-height:1.5vw; 
-        margin-top:-0.2vw;
-    }
-
-
-    .specialty6 { 
-        grid-area: 42 / 2 / 43 / 4;
-        display:grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        font-weight: 800;
-    }
-    .specialtycode6{
-        grid-area: 1 / 1 / 2 / 2;
-        color: white;
-        background-color:  #FFD600;
-        text-align: center;
-    }
-    .specialtycode6 p{
-       font-size:2.5vw;
-    }
-    .specialtyname6{
-        grid-area: 1 / 2 / 2 / 9;
-        text-align: left;
-    }
-    .specialtyname6 p{
-        font-size:1.5vw; 
-        margin-left:1vw;
-    }
-    .certificates6 { grid-area: 43 / 2 / 45 / 3; }
-    .certificates6 div{
-        padding:1vw;
-    }
-    .certificates6 div .midfont{
-        line-height:1.5vw;
-    }
-    .certificates6 div p{
-        line-height:1.5vw; 
-        margin-top:-0.2vw;
-    }
-
-    .marks6 { grid-area: 43 / 3 / 45 / 4; }
-    .marks6 div{
-        padding:1vw;
-    }
-    .marks6 div .midfont{
-        line-height:1.5vw;
-    }
-    .marks6 div p{
-        line-height:1.5vw; 
-        margin-top:-0.2vw;
-    }
-
-    .coefficients6 { grid-area: 45 / 2 / 48 / 3; }
-    .coefficients6 div{
-        margin-left:6vw; 
-        margin-right:6vw;
-    }
-    .coefficients6 div span{  
-        line-height:1.5vw;
-    }
-
-    .years6 { grid-area: 45 / 3 / 48 / 4; }
-    .years6 div{
-        margin-left:6vw; 
-        margin-right:6vw; 
-        margin-top:3vw;
-    }
-    .price6 { grid-area: 48 / 2 / 50 / 3; }
-    .price6 div{
-        padding:1vw;
-    }
-
-    .jobexamples6 { grid-area: 48 / 3 / 50 / 4; }
-    .jobexamples6 div{
-        padding:1vw;
-    }
-    .jobexamples6 div .midfont{
-        margin-top:1vw;
-        line-height:2vw;
-    }
-    .jobexamples6 div p{
-        line-height:1.5vw; 
-        margin-top:-0.2vw;
-    }
 }
 
 /*Superheroes css*/
@@ -2434,68 +1883,7 @@ html { font-family: 'Inter', sans-serif; }
         grid-area: 3 / 1 / 4 / 2; 
     }
 
-    .frame1 { 
-        grid-area: 3 / 1 / 4 / 2;
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .frame2 { 
-        grid-area: 3 / 2 / 4 / 3; 
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .frame3 { 
-        grid-area: 4 / 1 / 5 / 2; 
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .frame4 { 
-        grid-area: 4 / 2 / 5 / 3; 
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .frame5 { 
-        grid-area: 5 / 1 / 6 / 2; 
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .frame6 { 
-        grid-area: 5 / 2 / 6 / 3;
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .frame7 { 
-        grid-area: 6 / 1 / 7 / 2; 
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .frame8 { 
-        grid-area: 6 / 2 / 7 / 3; 
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .frame9 { 
-        grid-area: 7 / 1 / 8 / 2; 
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .frame10 { 
-        grid-area: 7 / 2 / 8 / 3; 
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .frame11 { 
-        grid-area: 8 / 1 / 9 / 2; 
+    .frame { 
         display:grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(5, 1fr);
@@ -2521,23 +1909,29 @@ html { font-family: 'Inter', sans-serif; }
 
     .superheroeswrap {
         width: 100%;
-        height: 70vw;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(19, 1fr);
+        height: 80vw;
         color:#1C3964;
         font-weight: 600;
         font-size: 0.9vw;
     }
     
-    .superheroeshead { grid-area: 1 / 1 / 4 / 3; }
+    .superheroeshead { 
+        width:40vw;
+        height: 10vw;
+     }
     .superheroeshead div{
         padding:1vw; 
         margin-top:4vw;
     }
-    .superheroesinfo { grid-area: 4 / 1 / 14 / 3; }
+    .superheroesinfo { 
+        width: 40vw;
+        height: 40vw;
+    }
     .superheroesmenu { 
-        grid-area: 1 / 3 / 2 / 6;
+        margin-left: 40vw;
+        margin-top: -50vw;
+        width:60vw;
+        height: 3vw;
         display:grid;
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(1, 1fr);
@@ -2572,81 +1966,30 @@ html { font-family: 'Inter', sans-serif; }
         font-size:0.75vw;
     }
 
-    .frame1 { 
-        grid-area: 2 / 3 / 8 / 4;
+    .els{
+        min-width: 60vw;
+        max-width: 100vw;
+        display: flex;
+        align-items: top;
+        justify-content: flex-start;
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+    .els .frame { 
+        width: 20vw;
+        height: 22vw;
         display:grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(5, 1fr);
      }
-    .frame2 { 
-        grid-area: 8 / 3 / 14 / 4; 
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .frame3 { 
-        grid-area: 2 / 4 / 8 / 5; 
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .frame4 { 
-        grid-area: 8 / 4 / 14 / 5; 
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .frame5 { 
-        grid-area: 2 / 5 / 8 / 6; 
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .frame6 { 
-        grid-area: 8 / 5 / 14 / 6;
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-     }
-    .frame7 { 
-        grid-area: 14 / 1 / 20 / 2; 
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .frame8 { 
-        grid-area: 14 / 2 / 20 / 3; 
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .frame9 { 
-        grid-area: 14 / 3 / 20 / 4; 
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .frame10 { 
-        grid-area: 14 / 4 / 20 / 5; 
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    .frame11 { 
-        grid-area: 14 / 5 / 20 / 6; 
-        display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-    
-    .gridforphoto{
+    .els .gridforphoto{
         grid-area: 1 / 1 / 4 / 2;
         background-repeat: no-repeat; 
         background-size: cover;
         text-align: right;
         color:white;
     }
-    .gridforabout{
+    .els .gridforabout{
         grid-area: 4 / 1 / 6 / 2;
     }
     
